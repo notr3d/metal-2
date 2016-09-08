@@ -1,0 +1,162 @@
+.site-footer {
+	background: url(img/footer-bg.jpg);
+	color: #87898a;
+	padding-bottom: 20px;
+	&__wrapper {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	&__item {
+		flex-basis: 100%;
+		@media @m {
+			margin-bottom: 30px;
+		}
+		@media @t {
+			flex-basis: 33%;
+		}
+		&--logo {
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			flex-direction: column;
+			@media @m {
+				text-align: center;
+			}
+			@media @d {
+				flex-direction: row;
+				justify-content: space-between;
+			}
+		}
+		&--address {
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			flex-direction: column;
+		}
+	}
+}
+
+.footer-nav {
+	background: #3b3b3d;	
+	box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.4); 
+	margin-bottom: 30px;
+	@media @t {
+		padding: 25px 0;
+	}
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		flex-direction: column;
+		@media @t {
+			flex-direction: row;
+			justify-content: space-between;
+		}
+	}
+	a {
+		display: inline-block;
+		font-size: 14px;
+		color: #919191;
+		padding: 10px 0;
+		box-shadow: 0 5px 0 0 transparent;
+		transition: .3s;
+		&:hover {
+			color: @yellow;
+		}
+	}
+	.current_page_item {
+		a {
+			color: @yellow;
+		}
+	}
+}
+
+.footer-note {
+	font-size: 16px;
+	font-weight: bold;
+	&__title {
+		margin: 20px 0;
+		@media @d {
+			margin-top: 0;
+		}
+	}
+}
+
+.footer-address {
+	@media @d {
+		padding: 0 45px;
+	}
+	&__item {
+		margin-bottom: 20px;
+	}
+}
+
+.footer-form {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-wrap: wrap;
+	&__header {
+		margin-bottom: 15px;
+	}
+	&__item {		
+		flex-basis: 100%;
+		margin-bottom: 16px;
+		input, textarea {
+			width: 100%;
+			padding: 15px;
+			background: #282829;
+			color: @white;
+			border-radius: 0;
+			border: none;
+			resize: vertical;
+			font-size: 14px;
+		}
+		input {
+			&[type="submit"] {
+				background: @yellow;
+				color: @black;
+				width: auto;
+				font-weight: bold;
+			}
+			&:focus {
+				color: @white;
+			}
+		}
+		&--submit {
+			text-align: right;
+		}
+		@media @d {
+			&--name {
+				flex-basis: 50%;
+				padding-right: 8px;
+			}
+			&--email {
+				flex-basis: 50%;
+				padding-left: 8px;
+			}
+		}
+	}
+}
+
+.copy {
+	margin-top: auto;
+	text-align: center;
+	font-weight: bold;
+}

@@ -1,28 +1,47 @@
-<?php
-/**
- * The template for displaying the footer.
- *
- * Contains the closing of the #content div and all content after.
- *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- *
- * @package metal-2
- */
-
-?>
-
-	</div><!-- #content -->
-
-	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'metal-2' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'metal-2' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'metal-2' ), 'metal-2', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
+	</div>
+	<footer class="site-footer">
+		<div class="footer-nav">
+			 <?php wp_nav_menu(array(
+				'menu_class' => 'footer-nav__wrapper lcw'
+			)); ?>
+		</div>
+		<div class="site-footer__wrapper lcw">
+			<div class="site-footer__item site-footer__item--logo">
+				<a href="home" class="site-logo site-logo--footer"></a>
+				<div class="footer-note">
+					<div class="footer-note__title">Разработка проектной<br>документации</div>
+					<div class="footer-note__subtitle">Чертежи КМ, КМД</div>
+				</div>
+			</div>				
+			<div class="site-footer__item site-footer__item--address">
+				<div class="footer-address">
+					<div class="footer-address__item">Адрес: 105318,<br>г. Москва, ул. Ибрагимова, 31 </div>
+					<div class="footer-address__item">Тел.: +7 (495) 789-36-86 </div>
+					<div class="footer-address__item">E-mail: info@bigmsk.ru</div>
+				</div>
+				<div class="copy">© 2016 «BIG Construction»</div>
+			</div>
+			<div class="site-footer__item">
+				<div class="footer-form__header">Написать нам:</div>
+				<form class="footer-form">
+					<div class="footer-form__item footer-form__item--name">
+						<input type="text" placeholder="Ваше имя*" required>
+					</div>
+					<div class="footer-form__item footer-form__item--email">
+						<input type="email" placeholder="Ваш e-mail*" required>
+					</div>
+					<div class="footer-form__item footer-form__item--textarea">
+						<textarea placeholder="Ваше сообщение*" required></textarea>
+					</div>
+					<div class="footer-form__item footer-form__item--submit">
+						<input type="submit" value="Отправить">
+					</div>
+				</form>
+			</div>
+		</div>
+	</footer>
+</div>
 
 <?php wp_footer(); ?>
-
 </body>
 </html>

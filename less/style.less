@@ -1,18 +1,31 @@
 @import "vendor.less";
+@import "site-header.less";
+@import "site-footer.less";
 
 @m: ~ "(max-width: 767px)";
 @t: ~ "(min-width: 768px)";
-@d: ~ "(min-width: 1280px)";
+@d: ~ "(min-width: 1100px)";
+
+@black: #3b3b3d;
+@white: #fff;
+@yellow: #ffba2f;
 
 .lcw {
 	margin: 0 auto;		
 	@media @m {
 		width: 100%;
+		padding: 15px;
 	}
 	@media @t {
 		width: 768px;
 	}
 	@media @d {
-		width: 1280px;
+		width: 1110px;
 	}	
 }
+
+body, input, textarea  {
+	font-family: 'Roboto Slab', serif;
+	color: @black;
+}
+

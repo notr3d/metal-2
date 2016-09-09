@@ -274,6 +274,7 @@ input {
 			display: -o-flex;
 			display: flex;
 			flex-wrap: wrap;
+			margin-bottom: 10px;
 			&--left {
 				margin-right: 40px;
 				.callback__item {
@@ -344,6 +345,98 @@ input {
 			&--email {
 				padding-left: 6px;
 			}
+		}
+	}
+}
+
+.examples {
+	&__container {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	&__item {
+		flex-basis: 100%;
+		margin-bottom: 46px;
+		@media @t {
+			flex-basis: 50%;
+			&:nth-of-type(odd) {
+				padding-right: 23px;
+			}
+			&:nth-of-type(even) {
+				padding-left: 23px;
+			}			
+		}
+		@media @d {
+			flex-basis: 33.33%;
+			&:nth-of-type(odd) {
+				padding-right: 0;
+			}
+			&:nth-of-type(even) {
+				padding-left: 0;
+			}
+			&:nth-of-type(3n-2) {
+				padding-right: 30px;
+			}
+			&:nth-of-type(3n-1) {
+				padding: 0 15px;
+			}
+			&:nth-of-type(3n) {
+				padding-left: 30px;
+			}
+		}
+	}
+	&__inner {		
+		box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.2), 0px 0px 15px 1px rgba(0, 0, 0, 0.2);
+		font-size: 0;
+		position: relative;			
+		@media @d {
+			overflow: hidden;
+			&:hover {
+				overflow: visible;
+				.examples__mask {
+					//top: 0;
+					visibility: visible;
+					opacity: 1;
+				}
+			}
+		}
+	}
+	&__img {
+		width: 100%;
+		margin: 0;
+		@media @t {
+			min-height: 250px;
+		}
+	}
+	&__mask {
+		background: @yellow;
+		padding: 35px 40px;
+		color: @white;
+		@media @d {
+			//background: rgba(255, 186, 47, 0.9);
+			position: absolute;
+			top: 100%;
+			left: 0;
+			z-index: 1;			
+			transition: .3s;
+			visibility: hidden;
+			opacity: 0;
+		}
+	}
+	&__header {
+		margin: 0;
+		margin-bottom: 20px;		
+		font-size: 14px;
+	}
+	&__text {
+		margin: 0;		
+		font-size: 14px;
+		&:not(:last-of-type) {
+			margin-bottom: 20px;
 		}
 	}
 }

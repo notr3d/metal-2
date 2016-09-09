@@ -1290,6 +1290,7 @@ input:hover {
     display: -o-flex;
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 10px;
   }
   .callback__col--left {
     margin-right: 40px;
@@ -1364,4 +1365,101 @@ input:hover {
   .callback__item--email {
     padding-left: 6px;
   }
+}
+.examples__container {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-wrap: wrap;
+}
+.examples__item {
+  flex-basis: 100%;
+  margin-bottom: 46px;
+}
+@media (min-width: 768px) {
+  .examples__item {
+    flex-basis: 50%;
+  }
+  .examples__item:nth-of-type(odd) {
+    padding-right: 23px;
+  }
+  .examples__item:nth-of-type(even) {
+    padding-left: 23px;
+  }
+}
+@media (min-width: 1100px) {
+  .examples__item {
+    flex-basis: 33.33%;
+  }
+  .examples__item:nth-of-type(odd) {
+    padding-right: 0;
+  }
+  .examples__item:nth-of-type(even) {
+    padding-left: 0;
+  }
+  .examples__item:nth-of-type(3n-2) {
+    padding-right: 30px;
+  }
+  .examples__item:nth-of-type(3n-1) {
+    padding: 0 15px;
+  }
+  .examples__item:nth-of-type(3n) {
+    padding-left: 30px;
+  }
+}
+.examples__inner {
+  box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.2), 0px 0px 15px 1px rgba(0, 0, 0, 0.2);
+  font-size: 0;
+  position: relative;
+}
+@media (min-width: 1100px) {
+  .examples__inner {
+    overflow: hidden;
+  }
+  .examples__inner:hover {
+    overflow: visible;
+  }
+  .examples__inner:hover .examples__mask {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+.examples__img {
+  width: 100%;
+  margin: 0;
+}
+@media (min-width: 768px) {
+  .examples__img {
+    min-height: 250px;
+  }
+}
+.examples__mask {
+  background: #ffba2f;
+  padding: 35px 40px;
+  color: #fff;
+}
+@media (min-width: 1100px) {
+  .examples__mask {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    transition: .3s;
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+.examples__header {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+.examples__text {
+  margin: 0;
+  font-size: 14px;
+}
+.examples__text:not(:last-of-type) {
+  margin-bottom: 20px;
 }

@@ -106,6 +106,86 @@
 				</div>
 			</div>
 		</section>
+		<section class="examples">
+			<div class="examples__wrapper lcw">
+				<h2 class="section-header">Примеры проектов:</h2>
+				<div class="examples__container">
+					<div class="examples__item">
+						<div class="examples__inner">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/home/examples/1.jpg" alt="" class="examples__img">
+							<div class="examples__mask">
+								<h3 class="examples__header">Административно-складское сооружение.</h3>
+								<p class="examples__text">Раздел КМД включает отдельные колонны и связи каркаса с несущими колоннами, рамой и  фахверком. </p>
+								<p class="examples__text">Общая площадь: <b>1100м2</b></p>
+								<p class="examples__text">Общий вес: <b>244,3 т</b></p>
+								<p class="examples__text">Марка стали: <b>С245</b></p>
+							</div>
+						</div>
+					</div>
+					<div class="examples__item">
+						<div class="examples__inner">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/home/examples/2.jpg" alt="" class="examples__img">
+							<div class="examples__mask">
+								<h3 class="examples__header">Административно-складское сооружение.</h3>
+								<p class="examples__text">Раздел КМД включает отдельные колонны и связи каркаса с несущими колоннами, рамой и  фахверком. </p>
+								<p class="examples__text">Общая площадь: <b>1100м2</b></p>
+								<p class="examples__text">Общий вес: <b>244,3 т</b></p>
+								<p class="examples__text">Марка стали: <b>С245</b></p>
+							</div>
+						</div>
+					</div>
+					<div class="examples__item">
+						<div class="examples__inner">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/home/examples/3.jpg" alt="" class="examples__img">
+							<div class="examples__mask">
+								<h3 class="examples__header">Административно-складское сооружение.</h3>
+								<p class="examples__text">Раздел КМД включает отдельные колонны и связи каркаса с несущими колоннами, рамой и  фахверком. </p>
+								<p class="examples__text">Общая площадь: <b>1100м2</b></p>
+								<p class="examples__text">Общий вес: <b>244,3 т</b></p>
+								<p class="examples__text">Марка стали: <b>С245</b></p>
+							</div>
+						</div>
+					</div>
+					<div class="examples__item">
+						<div class="examples__inner">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/home/examples/4.jpg" alt="" class="examples__img">
+							<div class="examples__mask">
+								<h3 class="examples__header">Административно-складское сооружение.</h3>
+								<p class="examples__text">Раздел КМД включает отдельные колонны и связи каркаса с несущими колоннами, рамой и  фахверком. </p>
+								<p class="examples__text">Общая площадь: <b>1100м2</b></p>
+								<p class="examples__text">Общий вес: <b>244,3 т</b></p>
+								<p class="examples__text">Марка стали: <b>С245</b></p>
+							</div>
+						</div>
+					</div>
+					<div class="examples__item">
+						<div class="examples__inner">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/home/examples/5.jpg" alt="" class="examples__img">
+							<div class="examples__mask">
+								<h3 class="examples__header">Административно-складское сооружение.</h3>
+								<p class="examples__text">Раздел КМД включает отдельные колонны и связи каркаса с несущими колоннами, рамой и  фахверком. </p>
+								<p class="examples__text">Общая площадь: <b>1100м2</b></p>
+								<p class="examples__text">Общий вес: <b>244,3 т</b></p>
+								<p class="examples__text">Марка стали: <b>С245</b></p>
+							</div>
+						</div>
+					</div>
+					<div class="examples__item">
+						<div class="examples__inner">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/home/examples/6.jpg" alt="" class="examples__img">
+							<div class="examples__mask">
+								<h3 class="examples__header">Административно-складское сооружение.</h3>
+								<p class="examples__text">Раздел КМД включает отдельные колонны и связи каркаса с несущими колоннами, рамой и  фахверком. </p>
+								<p class="examples__text">Общая площадь: <b>1100м2</b></p>
+								<p class="examples__text">Общий вес: <b>244,3 т</b></p>
+								<p class="examples__text">Марка стали: <b>С245</b></p>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</section>
 	</main>
 </div>
 <?php get_footer(); ?>

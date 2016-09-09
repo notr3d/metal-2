@@ -1,6 +1,7 @@
 @import "vendor.less";
 @import "site-header.less";
 @import "site-footer.less";
+@import "prices.less";
 
 @m: ~ "(max-width: 767px)";
 @t: ~ "(min-width: 768px)";
@@ -34,6 +35,18 @@ input {
 	&:hover {
 		box-shadow: none !important;
 	}
+}
+
+article {
+	p {
+		font-size: 14px;
+		line-height: 24px;
+		margin-bottom: 30px;
+	}
+}
+
+.article-header {
+	font-size: 24px;
 }
 
 .section-header {
@@ -298,6 +311,7 @@ input {
 			padding: 10px 20px;
 			width: 100%;
 			resize: vertical;
+			vertical-align: top;
 		}
 		&--file {
 			margin-bottom: 25px;
@@ -421,10 +435,11 @@ input {
 			position: absolute;
 			top: 100%;
 			left: 0;
-			z-index: 1;			
+			z-index: 10000000;			
 			transition: .3s;
 			visibility: hidden;
 			opacity: 0;
+			box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.2), 0px 0px 15px 1px rgba(0, 0, 0, 0.2);
 		}
 	}
 	&__header {

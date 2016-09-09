@@ -17,8 +17,7 @@
 					<div class="main-slider__text">Разработка<br>чертежеий КМД 2</div><br>
 					<div class="main-slider__text main-slider__text--special">от 500 руб/т</div>
 					<div class="main-slider__img"></div>
-				</div>
-				
+				</div>				
 			</div>
 		</section>
 		<section class="features">

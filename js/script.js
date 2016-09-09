@@ -23,5 +23,7 @@ $(document).ready(function(){
 		autoplayTimeout: 5000,
 		nav: true,
 	});
-	
+	var answer = $('.faq__answer');
+	var answerLength = answer.first().text().length;
+	console.log(answerLength);
 });

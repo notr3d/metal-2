@@ -1,0 +1,25 @@
+.faq {
+	&__item {
+		margin-bottom: 60px;
+	}
+	&__question {
+		font-size: 24px;
+		margin: 0;
+		margin-bottom: 30px;
+		&::before {
+			content: '';
+			display: inline-block;
+			margin-right: 15px;
+			width: 25px;
+			height: 20px;
+			background: url(img/faq/faq-symbol.png) no-repeat center;
+			background-size: contain;
+		}
+	}
+	&__answer {
+		font-size: 14px;
+		line-height: 24px;
+		margin: 0;
+		margin-bottom: 60px;
+	}
+}

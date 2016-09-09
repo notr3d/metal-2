@@ -1170,6 +1170,24 @@ object {
 .service__item {
   margin-bottom: 15px;
 }
+.service__item:nth-child(1) .service__inner {
+  background-image: url(img/services/1.jpg);
+}
+.service__item:nth-child(2) .service__inner {
+  background-image: url(img/services/2.jpg);
+}
+.service__item:nth-child(3) .service__inner {
+  background-image: url(img/services/3.jpg);
+}
+.service__item:nth-child(4) .service__inner {
+  background-image: url(img/services/4.jpg);
+}
+.service__item:nth-child(5) .service__inner {
+  background-image: url(img/services/5.jpg);
+}
+.service__item:nth-child(6) .service__inner {
+  background-image: url(img/services/6.jpg);
+}
 @media (min-width: 768px) {
   .service__item {
     margin-bottom: 30px;
@@ -1217,24 +1235,6 @@ object {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-.service__inner:nth-child(1) {
-  background-image: url(img/services/1.jpg);
-}
-.service__inner:nth-child(2) {
-  background-image: url(img/services/2.jpg);
-}
-.service__inner:nth-child(3) {
-  background-image: url(img/services/3.jpg);
-}
-.service__inner:nth-child(4) {
-  background-image: url(img/services/4.jpg);
-}
-.service__inner:nth-child(5) {
-  background-image: url(img/services/5.jpg);
-}
-.service__inner:nth-child(6) {
-  background-image: url(img/services/6.jpg);
 }
 @media (min-width: 768px) {
   .service__inner {
@@ -1295,6 +1295,29 @@ object {
     max-height: 0;
     overflow: hidden;
   }
+}
+.faq__item {
+  margin-bottom: 60px;
+}
+.faq__question {
+  font-size: 24px;
+  margin: 0;
+  margin-bottom: 30px;
+}
+.faq__question::before {
+  content: '';
+  display: inline-block;
+  margin-right: 15px;
+  width: 25px;
+  height: 20px;
+  background: url(img/faq/faq-symbol.png) no-repeat center;
+  background-size: contain;
+}
+.faq__answer {
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0;
+  margin-bottom: 60px;
 }
 .lcw {
   margin: 0 auto;
@@ -1501,6 +1524,9 @@ article p {
   margin: 0;
   font-size: 14px;
   line-height: 24px;
+}
+.callback {
+  margin-bottom: 30px;
 }
 .callback__container {
   border: 1px solid #3b3b3d;

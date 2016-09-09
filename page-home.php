@@ -1,6 +1,26 @@
 <?php get_header(); ?>
 <div class="content-area">
 	<main class="site-main home">
+		<section class="main-slider">
+			<div class="main-slider__wrapper">
+				<div class="main-slider__item lcw">
+					<div class="main-slider__text">Разработка<br>чертежеий КМД</div><br>
+					<div class="main-slider__text main-slider__text--special">от 500 руб/т</div>
+					<div class="main-slider__img"></div>
+				</div>
+				<div class="main-slider__item lcw">
+					<div class="main-slider__text">Разработка<br>чертежеий КМД 2</div><br>
+					<div class="main-slider__text main-slider__text--special">от 500 руб/т</div>
+					<div class="main-slider__img"></div>
+				</div>
+				<div class="main-slider__item lcw">
+					<div class="main-slider__text">Разработка<br>чертежеий КМД 2</div><br>
+					<div class="main-slider__text main-slider__text--special">от 500 руб/т</div>
+					<div class="main-slider__img"></div>
+				</div>
+				
+			</div>
+		</section>
 		<section class="features">
 			<div class="features__wrapper lcw">
 				<div class="features__item">
@@ -181,6 +201,43 @@
 								<p class="examples__text">Марка стали: <b>С245</b></p>
 							</div>
 						</div>
+					</div>					
+				</div>
+			</div>
+		</section>
+		<section class="partners">
+			<div class="partners__wrapper lcw">
+				<h2 class="section-header">Наши партнеры:</h2>
+				<div class="partners__container">
+					<div class="parnters__item">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/home/partners/1.jpg" alt="" class="partners__img">
+					</div>
+					<div class="parnters__item">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/home/partners/2.jpg" alt="" class="partners__img">
+					</div>
+					<div class="parnters__item">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/home/partners/3.jpg" alt="" class="partners__img">
+					</div>
+					<div class="parnters__item">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/home/partners/4.jpg" alt="" class="partners__img">
+					</div>
+					<div class="parnters__item">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/home/partners/5.jpg" alt="" class="partners__img">
+					</div>
+					<div class="parnters__item">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/home/partners/1.jpg" alt="" class="partners__img">
+					</div>
+					<div class="parnters__item">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/home/partners/2.jpg" alt="" class="partners__img">
+					</div>
+					<div class="parnters__item">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/home/partners/3.jpg" alt="" class="partners__img">
+					</div>
+					<div class="parnters__item">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/home/partners/4.jpg" alt="" class="partners__img">
+					</div>
+					<div class="parnters__item">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/home/partners/5.jpg" alt="" class="partners__img">
 					</div>
 					
 				</div>

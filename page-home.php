@@ -4,18 +4,18 @@
 		<section class="main-slider">
 			<div class="main-slider__wrapper">
 				<div class="main-slider__item lcw">
-					<div class="main-slider__text">Разработка<br>чертежеий КМД</div><br>
-					<div class="main-slider__text main-slider__text--special">от 500 руб/т</div>
+					<div class="main-slider__title">Разработка<br>чертежей КМД</div><br>
+					<div class="main-slider__subtitle">У нас Вы можете заказать рабочую документацию стадии КМД</div>
 					<div class="main-slider__img"></div>
 				</div>
 				<div class="main-slider__item lcw">
-					<div class="main-slider__text">Разработка<br>чертежеий КМД 2</div><br>
-					<div class="main-slider__text main-slider__text--special">от 500 руб/т</div>
+					<div class="main-slider__title">Разработка<br>чертежей КМД 2</div><br>
+					<div class="main-slider__subtitle">У нас Вы можете заказать рабочую документацию стадии КМД</div>
 					<div class="main-slider__img"></div>
 				</div>
 				<div class="main-slider__item lcw">
-					<div class="main-slider__text">Разработка<br>чертежеий КМД 2</div><br>
-					<div class="main-slider__text main-slider__text--special">от 500 руб/т</div>
+					<div class="main-slider__title">Разработка<br>чертежей КМД 2</div><br>
+					<div class="main-slider__subtitle">У нас Вы можете заказать рабочую документацию стадии КМД</div>
 					<div class="main-slider__img"></div>
 				</div>				
 			</div>

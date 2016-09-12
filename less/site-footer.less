@@ -60,6 +60,9 @@
 		display: -o-flex;
 		display: flex;
 		flex-direction: column;
+		&.children {
+			display: none;
+		}
 		@media @t {
 			flex-direction: row;
 			justify-content: space-between;
@@ -118,13 +121,15 @@
 		margin-bottom: 16px;
 		input, textarea {
 			width: 100%;
-			padding: 15px;
+			//padding: 15px;
+			padding: 10px;
 			background: #282829;
 			color: @white;
 			border-radius: 0;
 			border: none;
 			resize: vertical;
-			font-size: 14px;
+			//font-size: 14px;
+			font-size: 12px;
 		}
 		input {
 			&[type="submit"] {

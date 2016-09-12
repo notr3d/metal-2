@@ -1,6 +1,25 @@
 <?php get_header(); ?>
 <div class="content-area">
 	<main class="site-main">
+		<section class="main-slider main-slider--faq">
+			<div class="main-slider__wrapper">
+				<div class="main-slider__item lcw">
+					<div class="main-slider__title">Спрашивали? – Отвечаем!</div><br>
+					<div class="main-slider__subtitle">Самые актуальные вопросы о проектировании...</div>
+					<div class="main-slider__img"></div>
+				</div>
+				<div class="main-slider__item lcw">
+					<div class="main-slider__title">Спрашивали? – Отвечаем!</div><br>
+					<div class="main-slider__subtitle">Самые актуальные вопросы о проектировании...</div>
+					<div class="main-slider__img"></div>
+				</div>
+				<div class="main-slider__item lcw">
+					<div class="main-slider__title">Спрашивали? – Отвечаем!</div><br>
+					<div class="main-slider__subtitle">Самые актуальные вопросы о проектировании...</div>
+					<div class="main-slider__img"></div>
+				</div>				
+			</div>
+		</section>
 		<section class="faq">
 			<div class="faq__wrapper lcw">
 				<div class="faq__item">

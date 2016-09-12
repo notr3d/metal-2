@@ -118,3 +118,245 @@
 		}
 	}
 }
+
+.price-types {
+	&__wrapper {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		flex-direction: column;
+		@media @t {
+			flex-direction: row;
+			flex-wrap: wrap;
+		}
+		@media @d {
+			flex-direction: column;
+		}
+	}
+	&__item {
+		margin-bottom: 45px;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		flex-direction: column;
+		@media @t {
+			flex-basis: 50%;
+			&:nth-child(odd) {
+				padding-right: 15px;
+			}
+			&:nth-child(even) {
+				padding-left: 15px;
+			}			
+		}
+		@media @d {
+			flex-direction: row;
+			&:nth-child(odd) {
+				padding-right: 0;
+			}
+			&:nth-child(even) {
+				padding-left: 0;
+			}
+		}
+	}
+	&__img {
+		width: 100%;	
+		margin-bottom: 15px;
+		@media @t {		
+			max-height: 240px;
+		}
+		@media @d {
+			margin-right: 45px;
+			width: 300px;
+		}
+	}
+	&__text {
+		font-size: 14px;
+		margin: 0;
+		line-height: 24px;
+		@media @d {
+			flex-grow: 1;
+		}
+	}
+}
+
+.scheme {
+	padding: 30px 0;
+	&__wrapper {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		flex-direction: column;	
+		@media @t {
+			flex-direction: row;
+			flex-wrap: wrap;
+		}
+	}
+	&__item {
+		text-align: center;		
+		padding: 20px 0;
+		&:not(:last-child) {
+			margin-bottom: 90px;
+			position: relative;
+			&::before {
+				content: '';
+				display: block;
+				width: 80px;
+				height: 10px;
+				background: url(img/prices/scheme.png) no-repeat center;
+				background-position: right 3px center;
+				position: absolute;
+				@media @m {
+					top: 100%;
+					left: 50%;
+					transform: rotate(90deg);
+					transform-origin: left;
+				}
+			}
+		}
+		&:nth-child(2) {
+			.scheme__img {
+				background-position: -57px 0;
+			}
+		}
+		&:nth-child(3) {
+			.scheme__img {
+				background-position: -141px 0;
+			}
+		}
+		&:nth-child(4) {
+			.scheme__img {
+				background-position: -235px 0;
+			}
+		}
+		&:nth-child(5) {
+			.scheme__img {
+				background-position: -326px 0;
+			}
+		}
+		&:nth-child(6) {
+			.scheme__img {
+				background-position: -424px 0;
+			}
+		}		
+		@media @t {
+			flex-basis: 33.33%;
+			&:nth-child(1) {
+				&::before {
+					left: 100%;
+					top: 50%;
+					margin-left: -35px;
+					margin-top: -45px;
+				}
+			}
+			&:nth-child(2) {
+				&::before {
+					left: 100%;
+					top: 50%;
+					margin-left: -35px;
+					margin-top: -45px;
+				}
+			}	
+			&:nth-child(3) {
+				&::before {
+					top: 100%;
+					left: 50%;
+					transform: rotate(90deg);
+					margin-top: 35px;
+					margin-left: -35px;
+				}
+			}
+			&:nth-child(4) {
+				order: 2;
+				&::before {
+					right: 100%;
+					top: 50%;
+					margin-right: -45px;
+					margin-top: -45px;
+				}
+			}
+			&:nth-child(5) {
+				order: 1;
+				&::before {
+					right: 100%;
+					top: 50%;
+					margin-right: -45px;
+					margin-top: -45px;
+				}
+			}			
+		}
+		@media @d {
+			flex-basis: 16.66%;
+			&:nth-child(1) {
+				&::before {
+					right: 100%;
+					top: 50%;
+					margin-right: -45px;
+					margin-top: -45px;
+				}
+			}
+			&:nth-child(2) {
+				&::before {
+					right: 100%;
+					top: 50%;
+					margin-right: -45px;
+					margin-top: -45px;
+				}
+			}
+			&:nth-child(3) {
+				&::before {
+					left: 100%;
+					top: 50%;
+					margin-left: -45px;
+					margin-top: -45px;
+					transform: rotate(0);
+				}
+			}
+			&:nth-child(4) {
+				&::before {
+					right: 100%;
+					top: 50%;
+					margin-right: -45px;
+					margin-top: -45px;
+				}
+			}
+			&:nth-child(5) {
+				&::before {
+					right: 100%;
+					top: 50%;
+					margin-right: -40px;
+					margin-top: -45px;
+				}
+			}
+		}
+	}
+	&__img {
+		display: inline-block;
+		width: 100px;
+		height: 85px;
+		background: url(img/prices/scheme.png) no-repeat center;
+		background-position: 23px 0;
+	}
+	&__title {
+		margin-top: 20px;
+		padding-top: 23px;
+		font-size: 14px;
+		position: relative;
+		&::before {
+			content: '';
+			display: block;
+			width: 40px;
+			height: 3px;
+			background: @yellow;
+			position: absolute;
+			top: 0;
+			left: 50%;
+			margin-left: -20px;
+		}
+	}
+}

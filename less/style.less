@@ -9,9 +9,10 @@
 @t: ~ "(min-width: 768px)";
 @d: ~ "(min-width: 1100px)";
 
-@black: #000;
+@black: #333;
 @white: #fff;
 @yellow: #ffba2f;
+@light-yellow: #f9c53b;
 @dark-grey: #3b3b3d;
 
 .lcw {
@@ -41,10 +42,81 @@ input {
 }
 
 article {
+	h2 {
+		margin: 0;
+		margin-bottom: 30px;
+		position: relative;
+		padding-bottom: 10px;
+		&::before {
+			content: '';
+			display: block;
+			width: 100px;
+			height: 3px;
+			background: @yellow;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+		}
+	}
 	p {
+		margin: 0;		
 		font-size: 14px;
 		line-height: 24px;
 		margin-bottom: 30px;
+		font-family: 'Open Sans', sans-serif;
+	}
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		li {
+			padding-left: 40px;
+			margin-bottom: 15px;
+			font-family: 'Open Sans', sans-serif;
+			position: relative;
+			&::before {
+				content: '';
+				display: block;
+				width: 15px;
+				height: 1px;
+				background: @black;
+				position: absolute;
+				top: 12px;
+				left: 16px;
+			}
+		}
+	}
+	blockquote {
+		border: 1px solid @dark-grey;
+		color: @dark-grey;
+		padding: 25px 50px;
+		margin: 50px 0;
+		font-size: 18px;
+		font-weight: bold;
+		position: relative;
+		min-height: 140px;
+		&::before {
+			content: '';
+			display: block;
+			width: 40px;
+			height: 100px;
+			background: @yellow;
+			position: absolute;
+			top: 20px;
+			left: -20px;
+		}
+		&::after {
+			content: '';
+			display: block;
+			width: 0;
+			height: 0;
+			position: absolute;
+			top: 20px;
+			left: 20px;
+			border: solid transparent;
+			border-width: 50px 20px;
+			border-left-color: @yellow;
+		}
 	}
 }
 
@@ -121,6 +193,7 @@ article {
 		margin: 0;
 		font-size: 14px;
 		line-height: 24px;
+		font-family: 'Open Sans', sans-serif;
 	}
 }
 
@@ -216,6 +289,7 @@ article {
 		margin: 0;
 		font-size: 14px;
 		line-height: 24px;
+		font-family: 'Open Sans', sans-serif;
 	}
 }
 
@@ -315,9 +389,11 @@ article {
 			width: 100%;
 			resize: vertical;
 			vertical-align: top;
+			font-size: 12px;
 		}
 		&--file {
 			margin-bottom: 25px;
+			font-size: 12px;
 			input {
 				display: none;
 			}
@@ -368,13 +444,18 @@ article {
 }
 
 .examples {
+	background: url(img/footer-bg.jpg);
+	box-shadow: inset 0 -20px 40px 0 rgba(0, 0, 0, 0.4);
+	&__wrapper {		
+		padding-top: 30px;
+	}
 	&__container {
 		display: -webkit-flex;
 		display: -moz-flex;
 		display: -ms-flex;
 		display: -o-flex;
 		display: flex;
-		flex-wrap: wrap;
+		flex-wrap: wrap;	
 	}
 	&__item {
 		flex-basis: 100%;
@@ -408,6 +489,7 @@ article {
 		}
 	}
 	&__inner {		
+		border: 15px solid @yellow;
 		box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.2), 0px 0px 15px 1px rgba(0, 0, 0, 0.2);
 		font-size: 0;
 		position: relative;			
@@ -423,40 +505,57 @@ article {
 			}
 		}
 	}
+	&__heading {
+		margin: 0;
+		margin-bottom: 30px;
+		position: relative;
+		padding-bottom: 10px;
+		color: @white;
+		&::before {
+			content: '';
+			display: block;
+			width: 100px;
+			height: 3px;
+			background: @yellow;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+		}
+	}
 	&__img {
 		width: 100%;
 		margin: 0;
 		@media @t {
-			min-height: 250px;
+			min-height: 220px;
 		}
 	}
 	&__mask {
 		background: @yellow;
-		padding: 35px 40px;
 		color: @white;
 		@media @d {
 			//background: rgba(255, 186, 47, 0.9);
 			position: absolute;
-			top: 100%;
+			top: 0;
 			left: 0;
 			z-index: 10000000;			
 			transition: .3s;
 			visibility: hidden;
 			opacity: 0;
-			box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.2), 0px 0px 15px 1px rgba(0, 0, 0, 0.2);
+			height: 100%;
 		}
 	}
 	&__header {
 		margin: 0;
-		margin-bottom: 20px;		
+		margin-bottom: 10px;		
 		font-size: 14px;
+		font-family: 'Open Sans', sans-serif;
 	}
 	&__text {
 		margin: 0;		
 		font-size: 14px;
 		font-family: 'Open Sans', sans-serif;
 		&:not(:last-of-type) {
-			margin-bottom: 20px;
+			margin-bottom: 10px;
 		}
 	}
 }
@@ -480,7 +579,7 @@ article {
 			display: -o-flex;
 			display: flex;
 			flex-direction: column;
-			justify-content: center;
+			justify-content: flex-end;
 			align-items: flex-start;
 			text-align: left;
 			position: relative;
@@ -488,21 +587,27 @@ article {
 	}
 	&__title {
 		font-size: 36px;
-		line-height: 48px;
+		margin-bottom: 5px;
 		color: @white;
-		display: inline-block;
 		font-weight: bold;
 	}
 	&__subtitle {
 		font-size: 18px;
 		color: @white;
-		display: inline-block;
+		margin-bottom: 5px;
+	}
+	&__price {
+		width: 300px;
+		height: 160px;
+		margin-left: 130px;
+		margin-bottom: 50px;
+		background: url(img/slider/price.png) no-repeat center;
 	}
 	&__img {
 		display: inline-block;
 		height: 460px;
 		width: 500px;
-		background: url(img/slider/home-1.png) no-repeat center bottom;
+		background: url(img/slider/home/1.png) no-repeat center bottom;
 		background-size: contain;
 		@media @d {
 			position: absolute;
@@ -565,11 +670,17 @@ article {
 		}
 	}
 	&--faq {
-		.main-slider__img {
-			background-image: url(img/slider/faq-1.png);
-		}
 		.owl-stage {			
-			background: @yellow;
+			background: @yellow; 
+		}
+		.owl-item {
+			box-shadow: inset 0 40px 40px -20px rgba(0, 0, 0, 0.4);
+		}
+		.main-slider__item {
+			justify-content: center;			
+		}
+		.main-slider__img {
+			background-image: url(img/slider/faq/1.png);
 		}
 		.main-slider__title {
 			color: @black;
@@ -577,6 +688,26 @@ article {
 		.main-slider__subtitle {
 			color: @black;
 		}		
+	}
+	&--about {
+		.owl-stage {			
+			background: @light-yellow;
+		}
+		.main-slider__item {
+			justify-content: center;
+		}
+		.main-slider__img {
+			background-image: url(img/slider/about/1.jpg);
+			height: 100%;
+			width: 650px;
+			background-size: cover;
+		}
+		.main-slider__title {
+			color: @black;
+		}
+		.main-slider__subtitle {
+			color: @black;
+		}
 	}
 }
 
@@ -593,15 +724,18 @@ article {
 	background: rgba(0, 0, 0, 0.2);
 	z-index: 10000000;
 	display: none;
+	&.active {
+		display: block;
+	}
 	&__window {
 		padding: 15px;
 		position: absolute;
 		top: 50%;
 		left: 50%;
-		background: @white;
+		background: @white;	
+		transform: translate(-50%, -50%);
 		width: 300px;
-		margin-left: -150px;
-		margin-top: -200px;		
+		text-align: center;
 	}
 	&__header {
 		margin: 0;
@@ -628,6 +762,22 @@ article {
 			padding: 15px;
 			resize: vertical;
 			border-radius: 0;
+		}
+	}
+	&__close {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 45px;
+		height: 45px;
+		line-height: 45px;
+		text-align: center;
+		cursor: pointer;
+		font-size: 45px;
+		font-weight: bold;
+		transition: .3s;
+		&:hover {
+			color: @yellow;
 		}
 	}
 }

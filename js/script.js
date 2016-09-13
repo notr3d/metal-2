@@ -1,9 +1,12 @@
 $(document).ready(function(){
+	
+	//sliders
+	
   	$('.partners__container').owlCarousel({
 		items: 5,
 		loop: true,
 		autoplay: true,
-		autoplayTimeout: 5000,
+		autoplayTimeout: 8000,
 		responsive: {
 			0: {
 				items: 3
@@ -23,7 +26,27 @@ $(document).ready(function(){
 		autoplayTimeout: 5000,
 		nav: true,
 	});
-	var answer = $('.faq__answer');
-	var answerLength = answer.first().text().length;
-	console.log(answerLength);
+	
+	//faq
+	
+	var faq = $('.faq');
+	var question = faq.find('.faq__question');
+	
+	question.click(function(){
+		var answer = $(this).next();
+		answer.slideToggle();
+	})
+});
+
+//callback
+
+var cbOpen = $('#cb-open');
+var cbPopup = $('.cb-popup');
+var cbClose = $('.cb-popup__close');
+
+cbOpen.click(function(){
+	cbPopup.addClass('active');	
+});
+cbClose.click(function(){
+	cbPopup.removeClass('active');	
 });

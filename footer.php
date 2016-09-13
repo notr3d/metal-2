@@ -23,7 +23,10 @@
 			</div>
 			<div class="site-footer__item">
 				<div class="footer-form__header">Написать нам:</div>
-				<form class="footer-form">
+				<div class="footer-form">
+					<?php echo do_shortcode( '[contact-form-7 title="footer form"]' ); ?>
+				</div>
+				<!--<form class="footer-form">
 					<div class="footer-form__item footer-form__item--name">
 						<input type="text" placeholder="Ваше имя*" required>
 					</div>
@@ -36,7 +39,7 @@
 					<div class="footer-form__item footer-form__item--submit">
 						<input type="submit" value="Отправить">
 					</div>
-				</form>
+				</form>-->
 			</div>
 		</div>
 	</footer>

@@ -1,11 +1,13 @@
 .faq {
 	&__item {
-		margin-bottom: 60px;
+		margin-bottom: 30px;
 	}
 	&__question {
-		font-size: 24px;
+		font-size: 20px;
 		margin: 0;
-		margin-bottom: 30px;
+		margin-bottom: 15px;
+		cursor: pointer;
+		transition: .3s;
 		&::before {
 			content: '';
 			display: inline-block;
@@ -15,11 +17,42 @@
 			background: url(img/faq/faq-symbol.png) no-repeat center;
 			background-size: contain;
 		}
+		&:hover {
+			color: @yellow;
+		}
 	}
-	&__answer {
+	&__answer {	
+		display: none;
 		font-size: 14px;
-		line-height: 24px;
-		margin: 0;
-		margin-bottom: 60px;
+		font-family: 'Open Sans', sans-serif;
+		p {			
+			line-height: 24px;
+			margin: 0;
+			&:not(:last-child) {
+				margin-bottom: 15px;
+			}
+		}
+		ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			li {
+				padding-left: 45px;
+				position: relative;
+				&:not(:last-child) {
+					margin-bottom: 15px;
+				}
+				&::before {
+					content: '';
+					display: block;
+					width: 15px;
+					height: 1px;
+					background: @black;
+					position: absolute;
+					top: 11px;
+					left: 15px;
+				}
+			}
+		}
 	}
 }

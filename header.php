@@ -19,11 +19,15 @@
 			</div>
 			<div class="site-header__col site-header__col--right">
 				<div class="top-panel">
-					<div class="top-panel__item">Москва, ул. Ибрагимова, д.31</div>
-					<div class="top-panel__item">
-						<a href="mailto:info@bigkmd.ru">info@bigkmd.ru</a>
+					<div class="top-panel__item top-panel__item--address">
+						<span>г. Москва, ул. Ибрагимова, д.31</span>
 					</div>
-					<div class="top-panel__item">Заказать звонок</div>
+					<div class="top-panel__item top-panel__item--email">
+						<a href="mailto:info@bigkd.ru">info@bigkd.ru</a>
+					</div>
+					<div class="top-panel__item top-panel__item--callback">
+						<span id="cb-open">Заказать звонок</span>
+					</div>
 					<div class="top-panel__item top-panel__item--tel">+7 (495) 789-36-86</div>
 				</div>
 				<?php wp_nav_menu(array(
@@ -36,11 +40,11 @@
 		<div class="cb-popup__window">
 			<h2 class="cb-popup__header">Заказать звонок</h2>
 			<form class="cb-popup__form">
-				<input type="text" required>
-				<input type="tel" required>
-				<textarea required></textarea>
+				<input type="text" placeholder="Имя*" required>
+				<input type="tel" placeholder="Телефон*" required>
 				<input type="submit">
 			</form>
+			<div class="cb-popup__close">×</div>
 		</div>
 	</section>
 	<div class="site-content">

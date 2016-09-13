@@ -4,18 +4,21 @@
 		<section class="main-slider">
 			<div class="main-slider__wrapper">
 				<div class="main-slider__item lcw">
-					<div class="main-slider__title">Разработка<br>чертежей КМД</div><br>
-					<div class="main-slider__subtitle">У нас Вы можете заказать рабочую документацию стадии КМД</div>
+					<div class="main-slider__title">Разработка чертежей КМД</div>
+					<div class="main-slider__subtitle">У нас Вы можете заказать рабочую<br>документацию стадии КМД</div>
+					<div class="main-slider__price"></div>
 					<div class="main-slider__img"></div>
 				</div>
 				<div class="main-slider__item lcw">
-					<div class="main-slider__title">Разработка<br>чертежей КМД 2</div><br>
-					<div class="main-slider__subtitle">У нас Вы можете заказать рабочую документацию стадии КМД</div>
+					<div class="main-slider__title">Разработка чертежей КМД 2</div>
+					<div class="main-slider__subtitle">У нас Вы можете заказать рабочую<br>документацию стадии КМД</div>
+					<div class="main-slider__price"></div>
 					<div class="main-slider__img"></div>
 				</div>
 				<div class="main-slider__item lcw">
-					<div class="main-slider__title">Разработка<br>чертежей КМД 2</div><br>
-					<div class="main-slider__subtitle">У нас Вы можете заказать рабочую документацию стадии КМД</div>
+					<div class="main-slider__title">Разработка чертежей КМД 2</div>
+					<div class="main-slider__subtitle">У нас Вы можете заказать рабочую<br>документацию стадии КМД</div>
+					<div class="main-slider__price"></div>
 					<div class="main-slider__img"></div>
 				</div>				
 			</div>
@@ -124,10 +127,48 @@
 					</div>					
 				</div>
 			</div>
+		</section>		
+		<section class="partners">
+			<div class="partners__wrapper lcw">
+				<h2 class="section-header">Наши партнеры:</h2>
+				<div class="partners__container">
+					<div class="parnters__item">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/home/partners/1.jpg" alt="" class="partners__img">
+					</div>
+					<div class="parnters__item">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/home/partners/2.jpg" alt="" class="partners__img">
+					</div>
+					<div class="parnters__item">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/home/partners/3.jpg" alt="" class="partners__img">
+					</div>
+					<div class="parnters__item">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/home/partners/4.jpg" alt="" class="partners__img">
+					</div>
+					<div class="parnters__item">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/home/partners/5.jpg" alt="" class="partners__img">
+					</div>
+					<div class="parnters__item">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/home/partners/1.jpg" alt="" class="partners__img">
+					</div>
+					<div class="parnters__item">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/home/partners/2.jpg" alt="" class="partners__img">
+					</div>
+					<div class="parnters__item">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/home/partners/3.jpg" alt="" class="partners__img">
+					</div>
+					<div class="parnters__item">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/home/partners/4.jpg" alt="" class="partners__img">
+					</div>
+					<div class="parnters__item">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/home/partners/5.jpg" alt="" class="partners__img">
+					</div>
+					
+				</div>
+			</div>
 		</section>
 		<section class="examples">
 			<div class="examples__wrapper lcw">
-				<h2 class="section-header">Примеры проектов:</h2>
+				<h2 class="examples__heading">Примеры проектов:</h2>
 				<div class="examples__container">
 					<div class="examples__item">
 						<div class="examples__inner">
@@ -201,44 +242,6 @@
 							</div>
 						</div>
 					</div>					
-				</div>
-			</div>
-		</section>
-		<section class="partners">
-			<div class="partners__wrapper lcw">
-				<h2 class="section-header">Наши партнеры:</h2>
-				<div class="partners__container">
-					<div class="parnters__item">
-						<img src="<?php echo get_template_directory_uri(); ?>/img/home/partners/1.jpg" alt="" class="partners__img">
-					</div>
-					<div class="parnters__item">
-						<img src="<?php echo get_template_directory_uri(); ?>/img/home/partners/2.jpg" alt="" class="partners__img">
-					</div>
-					<div class="parnters__item">
-						<img src="<?php echo get_template_directory_uri(); ?>/img/home/partners/3.jpg" alt="" class="partners__img">
-					</div>
-					<div class="parnters__item">
-						<img src="<?php echo get_template_directory_uri(); ?>/img/home/partners/4.jpg" alt="" class="partners__img">
-					</div>
-					<div class="parnters__item">
-						<img src="<?php echo get_template_directory_uri(); ?>/img/home/partners/5.jpg" alt="" class="partners__img">
-					</div>
-					<div class="parnters__item">
-						<img src="<?php echo get_template_directory_uri(); ?>/img/home/partners/1.jpg" alt="" class="partners__img">
-					</div>
-					<div class="parnters__item">
-						<img src="<?php echo get_template_directory_uri(); ?>/img/home/partners/2.jpg" alt="" class="partners__img">
-					</div>
-					<div class="parnters__item">
-						<img src="<?php echo get_template_directory_uri(); ?>/img/home/partners/3.jpg" alt="" class="partners__img">
-					</div>
-					<div class="parnters__item">
-						<img src="<?php echo get_template_directory_uri(); ?>/img/home/partners/4.jpg" alt="" class="partners__img">
-					</div>
-					<div class="parnters__item">
-						<img src="<?php echo get_template_directory_uri(); ?>/img/home/partners/5.jpg" alt="" class="partners__img">
-					</div>
-					
 				</div>
 			</div>
 		</section>

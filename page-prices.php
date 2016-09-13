@@ -4,18 +4,21 @@
 		<section class="main-slider">
 			<div class="main-slider__wrapper">
 				<div class="main-slider__item lcw">
-					<div class="main-slider__title">Разработка<br>чертежей КМД</div><br>
-					<div class="main-slider__subtitle">У нас Вы можете заказать рабочую документацию стадии КМД</div>
+					<div class="main-slider__title">Разработка чертежей КМД</div>
+					<div class="main-slider__subtitle">У нас Вы можете заказать рабочую<br>документацию стадии КМД</div>
+					<div class="main-slider__price"></div>
 					<div class="main-slider__img"></div>
 				</div>
 				<div class="main-slider__item lcw">
-					<div class="main-slider__title">Разработка<br>чертежей КМД 2</div><br>
-					<div class="main-slider__subtitle">У нас Вы можете заказать рабочую документацию стадии КМД</div>
+					<div class="main-slider__title">Разработка чертежей КМД 2</div>
+					<div class="main-slider__subtitle">У нас Вы можете заказать рабочую<br>документацию стадии КМД</div>
+					<div class="main-slider__price"></div>
 					<div class="main-slider__img"></div>
 				</div>
 				<div class="main-slider__item lcw">
-					<div class="main-slider__title">Разработка<br>чертежей КМД 2</div><br>
-					<div class="main-slider__subtitle">У нас Вы можете заказать рабочую документацию стадии КМД</div>
+					<div class="main-slider__title">Разработка чертежей КМД 2</div>
+					<div class="main-slider__subtitle">У нас Вы можете заказать рабочую<br>документацию стадии КМД</div>
+					<div class="main-slider__price"></div>
 					<div class="main-slider__img"></div>
 				</div>				
 			</div>
@@ -105,6 +108,12 @@
 				</div>
 			</div>
 		</section>
+		<article class="lcw">
+			<h2>Порядок оплаты проекта:</h2>
+			<p>Оплата производиться по безналичному расчету между заказчиком и исполнителем в заранее согласованных объемах. Дата начала фактического работы над проектом отсчитывается по условию договора от даты исполнения авансового платежа.</p>
+			<p>Любая работа над проектом начинается исключительно с предоплатой. Объем предварительного платежа устанавливается на уровне 30% от стоимости проекта. Дальнейшие платежи проводиться или в порядке полного расчета либо частичного, в зависимости от объема заказа и требований заказчика. Оплаты могут быть привязанного к выполнению определенных задач по проекту так и к почасовому графику работ.</p>
+			<p>Оплата может осуществляться как в рублях так и с использованием расчетного счета в иностранной валюте. Договор заключается в рублях В случае оплаты в иностранной валюте расчет производиться по текущему курсу ЦБ.</p>
+		</article>
 		<section class="scheme">
 			<div class="scheme__wrapper lcw">
 				<div class="scheme__item">

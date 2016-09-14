@@ -69,7 +69,9 @@ article {
 		margin: 0;
 		padding: 0;
 		list-style: none;
+		margin-bottom: 30px;
 		li {
+			font-size: 14px;
 			padding-left: 40px;
 			margin-bottom: 15px;
 			font-family: 'Open Sans', sans-serif;
@@ -779,5 +781,227 @@ article {
 		&:hover {
 			color: @yellow;
 		}
+	}
+}
+
+.services-nav {
+	background: @yellow;
+	padding: 45px 0 10px;
+	margin-bottom: 30px;
+	box-shadow: inset 0 20px 40px 0 rgba(0, 0, 0, 0.4); 
+	&__wrapper {
+		list-style: none;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		flex-direction: column;
+		@media @t {
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+	}
+	.menu-item {
+		margin-bottom: 20px;
+		a {
+			font-size: 14px;
+			color: @black;
+			font-weight: bold;
+			transition: .3s;
+			&:hover {
+				color: @white !important;
+				outline: none !important;
+				outline-color: transparent !important;
+			}
+			&:visited {
+				color: @black;
+			}
+		}
+		&.current-menu-item {
+			a {
+				color: @white;
+			}
+		}
+		@media @t {
+			flex-basis: 50%;
+			&:nth-child(2n) {
+				text-align: right;
+			}
+		}
+		@media @d {
+			flex-basis: 33%;
+			&:nth-child(3n-2) {
+				text-align: left;
+			}
+			&:nth-child(3n-1) {
+				text-align: center;
+			}
+			&:nth-child(3n) {
+				text-align: right;
+			}			
+		}		
+	}
+}
+
+.items {
+	padding: 15px 0;
+	&__wrapper {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		flex-direction: column;
+		@media @t {
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+	}
+	&__item {
+		margin-bottom: 30px;
+		text-align: center;
+	}
+	&__img {
+		margin-bottom: 10px;
+	}
+	&__title {
+		font-size: 16px;
+		font-weight: bold;
+	}
+	&__header {
+		font-size: 18px;
+		font-weight: bold;
+		padding-bottom: 20px;
+		margin-bottom: 30px;
+		position: relative;
+		&::before {
+			content: '';
+			display: block;
+			width: 100px;
+			height: 3px;
+			background: @yellow;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+		}
+	}
+	&__text {
+		font-size: 14px;
+		line-height: 24px;
+		font-family: 'Open Sans', sans-serif;
+	}
+	&--km {
+		.items__wrapper {
+			justify-content: center;
+		}
+		.items__item {
+			@media @m {
+				//text-align: left;
+			}
+			@media @t {
+				margin: 0 30px 30px;
+			}
+			@media @d {
+				margin: 0 60px 30px;
+			}		
+			&:first-child {
+				margin-left: 0;
+			}
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+	&--foundation {
+		.items__item {
+			text-align: left;
+			@media @t {
+				flex-basis: 50%;
+				padding-left: 30px;
+			}
+			@media @d {
+				flex-basis: 33%;
+			}
+		}
+	}
+}
+
+.object-types {
+	padding: 60px 0;
+	&__wrapper {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	&__item {
+		width: 215px;
+		height: 215px;
+		background: @yellow;
+		margin-right: 1px;
+		margin-bottom: 1px;
+		text-align: center;
+		color: @black;
+		font-size: 14px;
+		padding: 55px 30px 0;
+		&:nth-child(2) {
+			.object-types__img {
+				background-position: -200px 10px;
+			}
+		}
+		&:nth-child(3) {
+			.object-types__img {
+				background-position: -415px 10px;
+			}
+		}
+		&:nth-child(4) {
+			.object-types__img {
+				background-position: -640px 10px;
+			}
+		}
+		&:nth-child(5) {
+			.object-types__img {
+				background-position: -860px 10px;
+			}
+		}
+		&:nth-child(6) {
+			.object-types__img {
+				background-position: 15px -215px;
+			}
+		}
+		&:nth-child(7) {
+			.object-types__img {
+				background-position: -200px -215px;
+			}
+		}
+		&:nth-child(8) {
+			.object-types__img {
+				background-position: -415px -215px;
+			}
+		}
+		&:nth-child(9) {
+			.object-types__img {
+				background-position: -640px -215px;
+			}
+		}
+		&:nth-child(10) {
+			.object-types__img {
+				background-position: -860px -215px;
+			}
+		}
+		
+	}
+	&__img {
+		display: inline-block;
+		height: 65px;
+		width: 115px;
+		background: url(img/services/manufacture/object-types.png) no-repeat;
+		background-position: 20px 10px;
 	}
 }

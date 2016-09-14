@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
-<meta charset="<?php bloginfo( 'charset' ); ?>">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="profile" href="http://gmpg.org/xfn/11">
-<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700&subset=cyrillic-ext,latin-ext" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=cyrillic-ext" rel="stylesheet">
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/owl.carousel.css">
+	<meta charset="<?php bloginfo( 'charset' ); ?>">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700&subset=cyrillic-ext,latin-ext" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=cyrillic-ext" rel="stylesheet">
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/owl.carousel.css">
+	<meta name="yandex-verification" content="7955c531346cf4cb"/>
+	<meta name="google-site-verification" content="PL6BEgz5AmDvRtQXV1tgIkxbyZH-732Pzkytf2BxTvM"/>
+	<meta name='wmail-verification' content='3820ccc998cbac0b36aefa9a80dbea3b'/>
 
 <?php wp_head(); ?>
 </head>
@@ -31,6 +34,7 @@
 					<div class="top-panel__item top-panel__item--tel">+7 (495) 789-36-86</div>
 				</div>
 				<?php wp_nav_menu(array(
+					'theme_location' => 'primary',
 					'menu_class' => 'header-nav'
 				)); ?>
 			</div>			

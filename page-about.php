@@ -38,36 +38,12 @@
 			<div class="callback__wrapper lcw">
 				<div class="callback__container">
 					<h2 class="callback__header">Бесплатная оценка<br>проекта КМД</h2>
-					<form class="callback__form">
-						<div class="callback__col callback__col--left">
-							<div class="callback__item callback__item--name">
-								<input type="text" placeholder="Ваше имя:*" required>
-							</div>
-							<div class="callback__item callback__item--tel">
-								<input type="tel" placeholder="Ваш телефон:*" required>
-							</div>
-							<div class="callback__item callback__item--email">
-								<input type="email" placeholder="Ваш e-mail:*" required>
-							</div>
-							<div class="callback__item callback__item--textarea">
-								<textarea placeholder="Описание проекта"></textarea>
-							</div>
-						</div>
-						<div class="callback__col callback__col--right">
-							<div class="callback__item callback__item--file">
-								<label>
-									<input type="file">
-									<span>Прикрепить файл</span>
-								</label>
-							</div>
-							<div class="callback__item callback__item--submit">
-								<input type="submit" value="Оценить КМД">
-							</div>
-						</div>
-					</form>
+					<div class="callback__form">
+						<?php echo do_shortcode( '[contact-form-7 title="callback"]' ); ?>
+					</div>
 				</div>
 			</div>
-		</section>
+		</section>	
 		<section class="examples">
 			<div class="examples__wrapper lcw">
 				<h2 class="examples__heading">Примеры проектов:</h2>

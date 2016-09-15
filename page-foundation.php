@@ -1,6 +1,11 @@
 <?php get_header(); ?>
 <div class="content-area">
 	<main class="site-main foundation">
+		<?php wp_nav_menu(array(
+			'theme_location' => 'services-nav',
+			'container_class' => 'services-nav',
+			'menu_class' => 'services-nav__wrapper lcw'
+		)); ?>
 		<article class="lcw">
 			<h2>Проектирование фундамента:</h2>
 			<p>При строительстве нового здания первым и основным вопросом, к решению которого стоит подойти с особым вниманием, является проектирование фундамента. Именно эта конструкция будет удерживать и равномерно распределять нагрузку и именно поэтому она настолько важна. Ошибки, допущенные еще на этапе проектирования могут в будущем привести к плачевным последствиям. Если вы заинтересованы в том, чтобы качество и надежность будущей постройки находились на высоком уровне, то данные работы стоит доверить профессионалам компании «BIG Construction».</p>
@@ -38,8 +43,17 @@
 					<img src="<?php echo get_template_directory_uri(); ?>/img/services/foundation/6.png" alt="" class="items__img">
 					<div class="items__header">Фундамент под резервуар</div>
 					<div class="items__text">Еще один из видов работ, осуществляемый нашими специалистами. В данном случае очень важна предварительная подготовка - так как требования к данным фундаментам порой кардинально отличаются в зависимости от природных условий в конкретном регионе.</div>
+				</div>								
+			</div>
+		</section>
+		<section class="order">
+			<div class="order__wrapper lcw">
+				<h2 class="order__header">Заказать проект</h2>
+				<div class="order__container">
+					<div class="order__form">
+						<?php echo do_shortcode( '[contact-form-7 title="order"]' ); ?>
+					</div>
 				</div>
-								
 			</div>
 		</section>
 	</main>

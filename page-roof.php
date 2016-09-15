@@ -1,6 +1,11 @@
 <?php get_header(); ?>
 <div class="content-area">
 	<main class="site-main foundation">
+		<?php wp_nav_menu(array(
+			'theme_location' => 'services-nav',
+			'container_class' => 'services-nav',
+			'menu_class' => 'services-nav__wrapper lcw'
+		)); ?>
 		<article class="lcw">
 			<h2>Проектирование крыши или кровли:</h2>
 			<p>Специалисты компании «BIG Construction» осуществляют профессиональное проектирование крыши и кровли. Мы проводим работы любой степени сложности, основываясь на ваших предпочтениях и учитывая особенности климата, окружающего ландшафта, а также характер несущих конструкций конкретного здания.</p>
@@ -37,8 +42,17 @@
 					<img src="<?php echo get_template_directory_uri(); ?>/img/services/roof/6.png" alt="" class="items__img">
 					<div class="items__header">Мансардные</div>
 					<div class="items__text">Такие крыши обладают скатами различных уклонов: в большинстве случаев, верхние являются более пологими, а нижние – более крутыми. Этот тип конструкции обеспечивает использование полезной площади мансардного этажа.</div>
+				</div>								
+			</div>
+		</section>
+		<section class="order">
+			<div class="order__wrapper lcw">
+				<h2 class="order__header">Заказать проект</h2>
+				<div class="order__container">
+					<div class="order__form">
+						<?php echo do_shortcode( '[contact-form-7 title="order"]' ); ?>
+					</div>
 				</div>
-								
 			</div>
 		</section>
 	</main>

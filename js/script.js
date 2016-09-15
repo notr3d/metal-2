@@ -35,6 +35,16 @@ $(document).ready(function(){
 	question.click(function(){
 		var answer = $(this).next();
 		answer.slideToggle();
+	});
+	
+	//order
+	
+	var orderHeader = $('.order__header')
+	orderHeader.click(function(){
+		var orderCon = $(this).next();
+		orderCon.toggleClass('order__container--active');
+		var orderItems = orderCon.find('.order__item');
+		orderItems.toggleClass('order__item--active')
 	})
 });
 

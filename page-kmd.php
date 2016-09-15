@@ -40,37 +40,13 @@
 			<p>Использование передовых технологий в нашем деле позволяет предотвратить возникновение погрешностей в рабочей деталировочной документации. С нашей последующей технической поддержкой на этапе изготовления и монтажа у вашего будущего проекта не останется уязвимых сторон.</p>
 			<p>Четко поставленные задачи и ориентировка на лучший результат – вот что позволяет нашим специалистам выполнят все работы точно в срок. Мы всегда готовы к тесному и плодотворному сотрудничеству с заказчиком для успешной реализации проекта.</p>
 		</article>
-		<section class="callback">
-			<div class="callback__wrapper lcw">
-				<div class="callback__container">
-					<h2 class="callback__header">Бесплатная оценка<br>проекта КМД</h2>
-					<form class="callback__form">
-						<div class="callback__col callback__col--left">
-							<div class="callback__item callback__item--name">
-								<input type="text" placeholder="Ваше имя:*" required>
-							</div>
-							<div class="callback__item callback__item--tel">
-								<input type="tel" placeholder="Ваш телефон:*" required>
-							</div>
-							<div class="callback__item callback__item--email">
-								<input type="email" placeholder="Ваш e-mail:*" required>
-							</div>
-							<div class="callback__item callback__item--textarea">
-								<textarea placeholder="Описание проекта"></textarea>
-							</div>
-						</div>
-						<div class="callback__col callback__col--right">
-							<div class="callback__item callback__item--file">
-								<label>
-									<input type="file">
-									<span>Прикрепить файл</span>
-								</label>
-							</div>
-							<div class="callback__item callback__item--submit">
-								<input type="submit" value="Оценить КМД">
-							</div>
-						</div>
-					</form>
+		<section class="order">
+			<div class="order__wrapper lcw">
+				<h2 class="order__header">Заказать проект</h2>
+				<div class="order__container">
+					<div class="order__form">
+						<?php echo do_shortcode( '[contact-form-7 title="order"]' ); ?>
+					</div>
 				</div>
 			</div>
 		</section>

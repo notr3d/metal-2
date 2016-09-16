@@ -6,7 +6,7 @@ $(document).ready(function(){
 		items: 5,
 		loop: true,
 		autoplay: true,
-		autoplayTimeout: 8000,
+		autoplayTimeout: 10000,
 		responsive: {
 			0: {
 				items: 3
@@ -23,7 +23,7 @@ $(document).ready(function(){
 		items: 1,
 		loop: true,
 		autoplay: true,
-		autoplayTimeout: 5000,
+		autoplayTimeout: 10000,
 		nav: true,
 	});
 	

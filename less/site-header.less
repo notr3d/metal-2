@@ -1,5 +1,17 @@
 .site-header {
-	margin: 15px 0;
+	margin: 15px 0 0;
+	position: relative;
+	&::before {
+		content: '';
+		display: block;
+		width: 100%;
+		height: 30px;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		background: linear-gradient(to bottom, rgba(0, 0, 0, 0.45), transparent 80%);
+		z-index: 10000000;
+	}
 	&__wrapper {
 		display: -webkit-flex;
 		display: -moz-flex;
@@ -107,6 +119,7 @@
 
 .header-nav {	
 	flex-basis: 100%;
+	margin-bottom: 10px;
 	ul {
 		list-style: none;
 		margin: 0;

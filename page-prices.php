@@ -32,7 +32,7 @@
 				<div class="price__item">
 					<div class="price__inner">
 						<h2 class="price__header">Простые</h2>
-						<div class="price__number">500</div>
+						<div class="price__number">от 500</div>
 						<div class="price__descr">руб/тонна</div>
 						<div class="price__text">К простым конструкциям относятся склады, ангары, логистические комплексы, любые иные здания на основе ферм.</div>
 						<a href="#" class="price__link">Заказать</a>
@@ -41,7 +41,7 @@
 				<div class="price__item">
 					<div class="price__inner">
 						<h2 class="price__header">Типовые</h2>
-						<div class="price__number">750</div>
+						<div class="price__number">от 750</div>
 						<div class="price__descr">руб/тонна</div>
 						<div class="price__text">К типовым относятся технологические конструкции, эстакады, производственные и многоэтажные здания.</div>
 						<a href="#" class="price__link">Заказать</a>
@@ -50,7 +50,7 @@
 				<div class="price__item">
 					<div class="price__inner">
 						<h2 class="price__header">Сложные</h2>
-						<div class="price__number">1000</div>
+						<div class="price__number">от 1000</div>
 						<div class="price__descr">руб/тонна</div>
 						<div class="price__text">К сложным конструкция относятся криволинейные конструкции, кровля аэропортов, стадионы, архитектурные элементы.</div>
 						<a href="#" class="price__link">Заказать</a>

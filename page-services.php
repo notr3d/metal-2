@@ -41,7 +41,7 @@
 				<div class="service__item">
 					<a href="tekla" class="service__inner">
 						<div class="service__bg"></div>
-						<h2 class="service__header">3Д моделирование Tekla Structures</h2>
+						<h2 class="service__header">3D моделирование объектов</h2>
 						<p class="service__text">Мы также проектируем промышленные здания и предприятия (ангаров, складских комплексов, цехов) на основе индивидуальных решений.</p>
 					</a>
 				</div>				

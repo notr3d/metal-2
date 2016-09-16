@@ -4,6 +4,7 @@
 @import "prices.less";
 @import "services.less";
 @import "faq.less";
+@import "contacts.less";
 
 @m: ~ "(max-width: 767px)";
 @t: ~ "(min-width: 768px)";
@@ -129,6 +130,17 @@ article {
 			border-left-color: @yellow;
 		}
 	}
+	a {
+		color: @black;
+		transition: .3s;
+		font-family: 'Roboto Slab', serif;
+		&:hover {
+			color: @yellow !important;
+		}
+		&:visited {
+			color: @black;
+		}
+	}
 }
 
 .article-header {
@@ -148,7 +160,7 @@ article {
 }
 
 .features {	
-	padding: 30px 0 15px;
+	padding: 30px 0 30px;
 	&__wrapper {
 		display: -webkit-flex;
 		display: -moz-flex;
@@ -158,12 +170,12 @@ article {
 		flex-wrap: wrap;
 	}
 	&__item {
-		margin-bottom: 30px;
+		//margin-bottom: 30px;
 		@media @t {
 			flex-basis: 50%;			
 		}
 		@media @d {
-			flex-basis: 25%;
+			flex-basis: 33.33%;
 		}
 	}
 	&__inner {		
@@ -171,12 +183,16 @@ article {
 		height: 100%;
 		display: block;
 		text-decoration: none;	
-		border: 3px solid transparent;
 		transition: .3s;
-		padding: 15px;
+		padding: 40px 50px;
 		&:hover {
 			color: @black;	
-			border-color: @yellow;
+			background: @yellow;
+			.features__header {
+				&::before {
+					background: @white;
+				}
+			}
 		}
 		&:visited {
 			color: @black;
@@ -196,6 +212,7 @@ article {
 			height: 3px;
 			background: @yellow;
 			position: absolute;
+			transition: .3s;
 			bottom: 0;
 			left: 0;
 		}
@@ -638,6 +655,7 @@ article {
 		margin-left: 130px;
 		margin-bottom: 50px;
 		background: url(img/slider/price.png) no-repeat center;
+		transform: rotate(-10deg);
 	}
 	&__img {
 		display: inline-block;
@@ -710,7 +728,7 @@ article {
 			background: @yellow; 
 		}
 		.owl-item {
-			box-shadow: inset 0 40px 40px -20px rgba(0, 0, 0, 0.4);
+			//box-shadow: inset 0 40px 40px -20px rgba(0, 0, 0, 0.4);
 		}
 		.main-slider__item {
 			justify-content: center;			
@@ -822,7 +840,7 @@ article {
 	background: @yellow;
 	padding: 45px 0 10px;
 	margin-bottom: 30px;
-	box-shadow: inset 0 20px 40px 0 rgba(0, 0, 0, 0.4); 
+	//box-shadow: inset 0 20px 40px 0 rgba(0, 0, 0, 0.4); 
 	&__wrapper {
 		list-style: none;
 		display: -webkit-flex;
@@ -1052,6 +1070,7 @@ article {
 	}
 	&__item {
 		flex-basis: 50%;
+		overflow: hidden;
 		position: relative;
 		@media @t {
 			flex-basis: 25%;
@@ -1068,7 +1087,8 @@ article {
 		@media @d {
 			&:hover {
 				.pics__img {
-					-webkit-filter: grayscale(25%)
+					-webkit-filter: grayscale(25%);
+					transform: scale(1.1);
 				}
 				.pics__mask {
 					opacity: 0;
@@ -1096,6 +1116,17 @@ article {
 		width: 100%;
 		transition: .3s;
 		background: rgba(59, 59, 61, 0.2);
+	}
+	&--5 {
+		.pics__item {
+			flex-basis: 100%;
+			@media @t {
+				flex-basis: 20%;
+			}
+		}
+		.pics__img {
+			height: 100%;
+		}
 	}
 }
 
@@ -1229,5 +1260,89 @@ article {
 		padding: 15px;
 		color: @white;
 		font-family: 'Open Sans', sans-serif;
+	}
+}
+
+.cols {
+	&__wrapper {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		flex-direction: column;
+		@media @t {
+			flex-direction: row;
+		}
+	}
+}
+
+.col {
+	&--aside {
+		@media @t {
+			padding-left: 30px;
+		}
+		@media @d {
+			padding-left: 60px;
+		}
+	}
+}
+
+.aside-nav {
+	margin: 0 auto;
+	width: 245px;
+	border: 1px solid @dark-grey;
+	&__header {
+		margin: 0;
+		padding: 30px 40px 35px;
+		color: @white;
+		background: @dark-grey;
+		font-size: 18px;
+		text-align: center;
+		span {
+			position: relative;
+			padding-bottom: 5px;
+			&::before {
+				content: '';
+				display: block;
+				width: 100px;
+				height: 3px;
+				background: @yellow;
+				position: absolute;
+				top: 100%;
+				left: 0;
+			}
+		}
+	}
+	&__container {
+		&::after {
+			content: '';
+			display: block;
+			height: 90px;
+			background: url(img/aside.png) no-repeat center;
+		}
+	}
+	&__wrapper {
+		margin: 0;
+		padding: 40px 40px 0;
+		list-style: none;		
+	}
+	.menu-item {
+		line-height: 16px;
+		&:not(:last-child) {
+			margin-bottom: 30px;
+		}
+		a {
+			font-weight: bold;
+			font-size: 14px;
+			color: @black;
+			transition: .3s;
+			&:hover {
+				color: @yellow !important;
+			}
+			&:visited {
+				color: @black;
+			}
+		}
 	}
 }

@@ -144,7 +144,8 @@ require get_template_directory() . '/inc/jetpack.php';
 function register_menus() {
   register_nav_menus(
     array(
-	  'services-nav' => __( 'Services navigation' )
+	  'services-nav' => __( 'Services navigation' ),
+	  'aside-nav' => __( 'Aside navigation' )
     )
   );
 }

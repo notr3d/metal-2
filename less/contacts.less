@@ -1,0 +1,157 @@
+.contacts {
+	
+}
+
+.con-panel {	
+	background: @yellow;
+	@media @d {
+		background: none;		
+	}
+	&__wrapper {
+		position: relative;	
+	}
+	&__container {
+		padding: 15px 0;
+		@media @d {			
+			background: rgba(255, 186, 47, 0.9);
+			width: 365px;
+			height: 835px;
+			padding: 25px 40px;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 100;
+		}
+	}	
+}
+
+.con-address {
+	@media @d {
+		padding: 0 30px;		
+	}
+	&__title {
+		font-size: 14px;
+		font-family: 'Open Sans', sans-serif;
+		line-height: 18px;
+	}
+	&__text {
+		font-size: 18px;
+		font-weight: bold;
+		line-height: 22px;
+		a {
+			color: @black;
+			transition: .3s;
+			&:hover {
+				color: lighten(@black, 10%) !important;
+			}
+			&:visited {
+				color: @black;
+			}
+		}
+	}
+	&__item {
+		margin-bottom: 20px;
+	}	
+}
+
+.contacts-callback {
+	&__wrapper {		
+		
+	}
+	&__form {
+		border: 1px solid @black;
+		padding: 15px 30px;
+		background: @white;
+	}
+	&__header {
+		font-size: 18px;
+		margin: 0;
+		font-weight: bold;
+		text-align: center;		
+		margin-bottom: 15px;	
+	}
+	&__item {
+		margin-bottom: 10px;
+		input:not([type="submit"]), textarea {
+			width: 100%;
+			font-size: 12px;
+			padding: 7px;
+			background: #f3f4f6;
+			border: 1px solid #dddddd;
+			font-family: 'Open Sans', sans-serif;
+		}
+		textarea {
+			height: 90px;
+			resize: none;
+		}
+		&--file {
+			font-size: 12px;
+			text-align: center;
+			input {
+				display: none;
+			}			
+		}
+		&--submit {
+			text-align: center;
+			input {
+				padding: 20px 40px;
+				width: auto;
+				font-size: 16px;
+				color: @white;
+				background: @dark-grey;
+				transition: .3s;
+				&:hover {
+					background: lighten(@dark-grey, 10%);
+				}
+			}
+		}
+	}
+	&__file {
+		text-decoration: underline;
+		cursor: pointer;
+		color: #adadb5;
+		&::before {
+			content: '';
+			display: inline-block;
+			width: 12px;
+			height: 12px;
+			background: url(img/services/order-file.png) no-repeat center;
+			background-size: contain;
+			margin-right: 7px;
+		}
+	}
+	br {
+		display: none;
+	}
+	.ajax-loader {
+		display: none;
+	}
+	.wpcf7-not-valid {
+		border-color: @red;
+	}
+	.wpcf7-not-valid-tip {
+		background: @red;
+		font-size: 10px;
+		color: @white;
+		padding: 0 10px;
+		font-family: 'Open Sans', sans-serif;
+	}
+	.wpcf7-response-output {
+		margin: 0;
+		margin-top: 15px;
+		border: none;
+		background: @red;
+		font-size: 12px;
+		padding: 15px;
+		color: @white;
+		font-family: 'Open Sans', sans-serif;
+	}
+}
+
+.contacts-map {
+	height: 400px;
+	background: #eaeaea;
+	@media @d {
+		height: 835px;
+	}
+}

@@ -3,52 +3,61 @@
 	<main class="site-main home">
 		<section class="main-slider">
 			<div class="main-slider__wrapper">
-				<div class="main-slider__item lcw">
-					<div class="main-slider__title">Разработка чертежей КМД</div>
-					<div class="main-slider__subtitle">У нас Вы можете заказать рабочую<br>документацию стадии КМД</div>
-					<div class="main-slider__price"></div>
-					<div class="main-slider__img"></div>
+				<div class="main-slider__item">
+					<div class="main-slider__container lcw">
+						<div class="main-slider__title">Разработка чертежей КМД</div>
+						<div class="main-slider__subtitle">У нас Вы можете заказать рабочую<br>документацию стадии КМД</div>
+						<div class="main-slider__price"></div>
+						<div class="main-slider__img"></div>
+					</div>
 				</div>
-				<div class="main-slider__item lcw">
-					<div class="main-slider__title">Разработка чертежей КМД 2</div>
-					<div class="main-slider__subtitle">У нас Вы можете заказать рабочую<br>документацию стадии КМД</div>
-					<div class="main-slider__price"></div>
-					<div class="main-slider__img"></div>
-				</div>
-				<div class="main-slider__item lcw">
-					<div class="main-slider__title">Разработка чертежей КМД 2</div>
-					<div class="main-slider__subtitle">У нас Вы можете заказать рабочую<br>документацию стадии КМД</div>
-					<div class="main-slider__price"></div>
-					<div class="main-slider__img"></div>
+				<div class="main-slider__item main-slider__item--2">
+					<div class="main-slider__container lcw">
+						<div class="main-slider__title">3D моделирование</div>
+						<div class="main-slider__subtitle">Разработка проекта КМД при помощи<br>программ трехмерного моделирования</div>
+						<div class="main-slider__img"></div>
+					</div>
 				</div>				
 			</div>
 		</section>
 		<section class="features">
 			<div class="features__wrapper lcw">
 				<div class="features__item">
-					<a href="#" class="features__inner">
-						<h2 class="features__header">Проектирование металлических конструкций</h2>
+					<a href="kmd" class="features__inner">
+						<h2 class="features__header">Проектирование и разработка КМД</h2>
 						<p class="features__text">Проектирование и изготовление металлоконструкций обязательно потребуется при создании сложных и уникальных объектов: небоскребов, зданий аэропортов и вокзалов, крытых стадионов.</p>
 					</a>
 				</div>
 				<div class="features__item">
-					<a href="#" class="features__inner">
-						<h2 class="features__header">Разработка документации П+РД</h2>
+					<a href="km" class="features__inner">
+						<h2 class="features__header">Проектирование и разработка КМ</h2>
 						<p class="features__text">Наша компания предлагает Вам разработку проекта и рабочей документации. Данная документация позволит быстрее приступить к строительству или реконструкции объекта.</p>
 					</a>
 				</div>
 				<div class="features__item">
-					<a href="#" class="features__inner">
-						<h2 class="features__header">Проектирование промышленных объектов</h2>
+					<a href="manufacture" class="features__inner">
+						<h2 class="features__header">Проектирование объектов</h2>
 						<p class="features__text">Компания «BIG Constructions» выполняет проектирование промышленных зданий и предприятий (ангаров, складских комплексов, цехов) на основе индивидуальных решений.</p>
 					</a>
 				</div>
 				<div class="features__item">
-					<a href="#" class="features__inner">
-						<h2 class="features__header">Технологии моделирования Tekla Structures</h2>
+					<a href="foundation" class="features__inner">
+						<h2 class="features__header">Проектирование фундамента</h2>
+						<p class="features__text">Опираясь на предоставленные Вами даные мы выполняем сбор нагрузок с наземной части здания и подбираем конструктивную схему фундамента для прохождения экспертизы в разделе КР, КЖ</p>
+					</a>
+				</div>
+				<div class="features__item">
+					<a href="roof" class="features__inner">
+						<h2 class="features__header">Проектирование кровли</h2>
+						<p class="features__text">Разработка проекта крыши или кровли может выполняться отдельным комплектом в случае реконструкции существующего объекта, или при наличии проектной документации на здание ниже отметки кровли</p>
+					</a>
+				</div>
+				<div class="features__item">
+					<a href="tekla" class="features__inner">
+						<h2 class="features__header">3D моделирование объектов</h2>
 						<p class="features__text">Современное программное обеспечение позволяет нашим специалистам в кратчайшие сроки создавать сооружения любой сложности и производить точные расчеты.</p>
 					</a>
-				</div>				
+				</div>								
 			</div>
 		</section>
 		<section class="callback">
@@ -104,7 +113,7 @@
 				</div>
 			</div>
 		</section>		
-		<section class="partners">
+		<!--<section class="partners">
 			<div class="partners__wrapper lcw">
 				<h2 class="section-header">Наши партнеры:</h2>
 				<div class="partners__container">
@@ -141,7 +150,7 @@
 					
 				</div>
 			</div>
-		</section>
+		</section>-->
 		<section class="examples">
 			<div class="examples__wrapper lcw">
 				<h2 class="examples__heading">Примеры проектов:</h2>

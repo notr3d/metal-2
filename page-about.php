@@ -1,24 +1,44 @@
 <?php get_header(); ?>
 <div class="content-area">
 	<main class="site-main about">
-		<section class="main-slider main-slider--about">
-			<div class="main-slider__wrapper">
-				<div class="main-slider__item lcw">
-					<div class="main-slider__title">3D моделирование</div>
-					<div class="main-slider__subtitle">Разработка проекта КМД при помощи<br>программ трехмерного моделирования</div>
+		<section class="main-slider">
+			<div class="main-slider__item main-slider__item--left main-slider__item--dark main-slider__item--1">
+				<div class="main-slider__wrapper lcw">
+					<div class="main-slider__container">
+						<div class="main-slider__title">Разработка чертежей КМД</div>
+						<div class="main-slider__subtitle">У нас вы можете заказать рабочую документацию<br> стадии КМД</div>
+						<div class="main-slider__price"></div>
+					</div>
 					<div class="main-slider__img"></div>
 				</div>
-				<div class="main-slider__item lcw">
-					<div class="main-slider__title">3D моделирование</div>
-					<div class="main-slider__subtitle">Разработка проекта КМД при помощи<br>программ трехмерного моделирования</div>
-					<div class="main-slider__img"></div>
-				</div>
-				<div class="main-slider__item lcw">
-					<div class="main-slider__title">3D моделирование</div>
-					<div class="main-slider__subtitle">Разработка проекта КМД при помощи<br>программ трехмерного моделирования</div>
-					<div class="main-slider__img"></div>
-				</div>				
 			</div>
+			<div class="main-slider__item main-slider__item--left main-slider__item--light main-slider__item--2">
+				<div class="main-slider__wrapper lcw">
+					<div class="main-slider__container">
+						<div class="main-slider__title">3D моделирование</div>
+						<div class="main-slider__subtitle">Разработка проекта КМД при помощи<br>программ трехмерного моделирования</div>
+					</div>
+					<div class="main-slider__img"></div>
+				</div>
+			</div>	
+			<div class="main-slider__item main-slider__item--right main-slider__item--dark main-slider__item--3">
+				<div class="main-slider__wrapper lcw">
+					<div class="main-slider__container">
+						<div class="main-slider__title">Проектирование объектов</div>
+						<div class="main-slider__subtitle">Проектирование гражданских и промышленных<br>зданий любой сложности</div>
+					</div>
+					<div class="main-slider__img"></div>
+				</div>
+			</div>	
+			<div class="main-slider__item main-slider__item--left main-slider__item--light main-slider__item--4">
+				<div class="main-slider__wrapper lcw">
+					<div class="main-slider__container">
+						<div class="main-slider__title">Проектирование кровли</div>
+						<div class="main-slider__subtitle">Проектирование крыши и кровли<br>любой степени сложности</div>
+					</div>
+					<div class="main-slider__img"></div>
+				</div>
+			</div>				
 		</section>
 		<section class="cols">
 			<div class="cols__wrapper lcw">
@@ -109,10 +129,9 @@
 						<div class="examples__inner">
 							<img src="<?php echo get_template_directory_uri(); ?>/img/home/examples/1.jpg" alt="" class="examples__img">
 							<div class="examples__mask">
-								<h3 class="examples__header">Административно-складское сооружение.</h3>
-								<p class="examples__text">Раздел КМД включает отдельные колонны и связи каркаса с несущими колоннами, рамой и  фахверком. </p>
-								<p class="examples__text">Общая площадь: <b>1100м2</b></p>
-								<p class="examples__text">Общий вес: <b>244,3 т</b></p>
+								<h3 class="examples__header">Узлы для демонстрационного стенда</h3>
+								<p class="examples__text">Рабочая документация на изготовление образцов узлов из профильного проката для демонстрационного стенда</p>
+								<p class="examples__text">Общий вес узлов: <b>149,1 кг</b></p>
 								<p class="examples__text">Марка стали: <b>С245</b></p>
 							</div>
 						</div>
@@ -121,10 +140,9 @@
 						<div class="examples__inner">
 							<img src="<?php echo get_template_directory_uri(); ?>/img/home/examples/2.jpg" alt="" class="examples__img">
 							<div class="examples__mask">
-								<h3 class="examples__header">Административно-складское сооружение.</h3>
-								<p class="examples__text">Раздел КМД включает отдельные колонны и связи каркаса с несущими колоннами, рамой и  фахверком. </p>
-								<p class="examples__text">Общая площадь: <b>1100м2</b></p>
-								<p class="examples__text">Общий вес: <b>244,3 т</b></p>
+								<h3 class="examples__header">Узлы для демонстрационного стенда</h3>
+								<p class="examples__text">Рабочая документация на изготовление образцов узлов из профильного проката для демонстрационного стенда</p>
+								<p class="examples__text">Общий вес узлов: <b>149,1 кг</b></p>
 								<p class="examples__text">Марка стали: <b>С245</b></p>
 							</div>
 						</div>
@@ -133,10 +151,9 @@
 						<div class="examples__inner">
 							<img src="<?php echo get_template_directory_uri(); ?>/img/home/examples/3.jpg" alt="" class="examples__img">
 							<div class="examples__mask">
-								<h3 class="examples__header">Административно-складское сооружение.</h3>
-								<p class="examples__text">Раздел КМД включает отдельные колонны и связи каркаса с несущими колоннами, рамой и  фахверком. </p>
-								<p class="examples__text">Общая площадь: <b>1100м2</b></p>
-								<p class="examples__text">Общий вес: <b>244,3 т</b></p>
+								<h3 class="examples__header">Узлы для демонстрационного стенда</h3>
+								<p class="examples__text">Рабочая документация на изготовление образцов узлов из профильного проката для демонстрационного стенда</p>
+								<p class="examples__text">Общий вес узлов: <b>149,1 кг</b></p>
 								<p class="examples__text">Марка стали: <b>С245</b></p>
 							</div>
 						</div>
@@ -145,11 +162,11 @@
 						<div class="examples__inner">
 							<img src="<?php echo get_template_directory_uri(); ?>/img/home/examples/4.jpg" alt="" class="examples__img">
 							<div class="examples__mask">
-								<h3 class="examples__header">Административно-складское сооружение.</h3>
-								<p class="examples__text">Раздел КМД включает отдельные колонны и связи каркаса с несущими колоннами, рамой и  фахверком. </p>
-								<p class="examples__text">Общая площадь: <b>1100м2</b></p>
-								<p class="examples__text">Общий вес: <b>244,3 т</b></p>
-								<p class="examples__text">Марка стали: <b>С245</b></p>
+								<h3 class="examples__header">Торговое сооружение</h3>
+								<p class="examples__text">Раздел КМД  включает отдельные несущие колонны, вертикальные и горизонтальные связи из труб и уголков</p>
+								<p class="examples__text">Общая площадь: <b>2100 м<sup>2</sup></b></p>
+								<p class="examples__text">Общий вес: <b>87 т</b></p>
+								<p class="examples__text">Марка стали: <b>С245 и C255</b></p>
 							</div>
 						</div>
 					</div>
@@ -159,7 +176,7 @@
 							<div class="examples__mask">
 								<h3 class="examples__header">Административно-складское сооружение.</h3>
 								<p class="examples__text">Раздел КМД включает отдельные колонны и связи каркаса с несущими колоннами, рамой и  фахверком. </p>
-								<p class="examples__text">Общая площадь: <b>1100м2</b></p>
+								<p class="examples__text">Общая площадь: <b>1100м<sup>2</sup></b></p>
 								<p class="examples__text">Общий вес: <b>244,3 т</b></p>
 								<p class="examples__text">Марка стали: <b>С245</b></p>
 							</div>
@@ -169,10 +186,10 @@
 						<div class="examples__inner">
 							<img src="<?php echo get_template_directory_uri(); ?>/img/home/examples/6.jpg" alt="" class="examples__img">
 							<div class="examples__mask">
-								<h3 class="examples__header">Административно-складское сооружение.</h3>
-								<p class="examples__text">Раздел КМД включает отдельные колонны и связи каркаса с несущими колоннами, рамой и  фахверком. </p>
-								<p class="examples__text">Общая площадь: <b>1100м2</b></p>
-								<p class="examples__text">Общий вес: <b>244,3 т</b></p>
+								<h3 class="examples__header">Промышленное сооружение ЛЭП У-220-2т+14</h3>
+								<p class="examples__text">Раздел КМД включает отдельные колонны и связи каркаса с несущими колоннами, рамой и фахверком</p>
+								<p class="examples__text">Общая площадь: <b> 86,5 м<sup>2</sup></b></p>
+								<p class="examples__text">Общий вес: <b>23,5 т</b></p>
 								<p class="examples__text">Марка стали: <b>С245</b></p>
 							</div>
 						</div>

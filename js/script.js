@@ -19,10 +19,11 @@ $(document).ready(function(){
 			}
 		}
 	});
-	$('.main-slider__wrapper').owlCarousel({
+	$('.main-slider').owlCarousel({
 		items: 1,
 		loop: true,
 		autoplay: true,
+		animateOut: 'fadeOut',
 		autoplayTimeout: 10000,
 		nav: true,
 	});
@@ -50,9 +51,9 @@ $(document).ready(function(){
 
 //callback
 
-var cbOpen = $('#cb-open');
-var cbPopup = $('.cb-popup');
-var cbClose = $('.cb-popup__close');
+var cbOpen = $('.header-form-open');
+var cbPopup = $('.header-form');
+var cbClose = $('.header-form__close');
 
 cbOpen.click(function(){
 	cbPopup.addClass('active');	

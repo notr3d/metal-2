@@ -19,7 +19,7 @@
 	<header class="site-header">
 		<div class="site-header__wrapper lcw">
 			<div class="site-header__col site-header__col--left">
-				<a href="home" class="site-logo"></a>
+				<a href="<?php echo get_permalink(get_page_by_title('главная')->ID)?>" class="site-logo"></a>
 			</div>
 			<div class="site-header__col site-header__col--right">
 				<div class="top-panel">
@@ -30,9 +30,9 @@
 						<a href="mailto:info@bigkd.ru">info@bigkd.ru</a>
 					</div>
 					<div class="top-panel__item top-panel__item--callback">
-						<span id="cb-open">Заказать звонок</span>
+						<span class="header-form-open">Заказать звонок</span>
 					</div>
-					<div class="top-panel__item top-panel__item--tel">+7 (495) 789-36-86</div>
+					<div class="top-panel__item top-panel__item--tel">+7 (495) 726-57-22</div>
 				</div>
 				<?php wp_nav_menu(array(
 					'theme_location' => 'primary',
@@ -41,15 +41,11 @@
 			</div>			
 		</div>
 	</header>
-	<section class="cb-popup">
-		<div class="cb-popup__window">
-			<h2 class="cb-popup__header">Заказать звонок</h2>
-			<form class="cb-popup__form">
-				<input type="text" placeholder="Имя*" required>
-				<input type="tel" placeholder="Телефон*" required>
-				<input type="submit">
-			</form>
-			<div class="cb-popup__close">×</div>
+	<section class="header-form">
+		<div class="header-form__window">
+			<h2 class="header-form__header">Заказать звонок</h2>
+			<?php echo do_shortcode( '[contact-form-7 title="header form"]' ); ?>
+			<div class="header-form__close">×</div>
 		</div>
 	</section>
 	<div class="site-content">

@@ -8,7 +8,7 @@
 		</div>
 		<div class="site-footer__wrapper lcw">
 			<div class="site-footer__item site-footer__item--logo">
-				<a href="home" class="site-logo site-logo--footer"></a>
+				<a href="<?php echo get_permalink(get_page_by_title('главная')->ID)?>" class="site-logo site-logo--footer"></a>
 				<div class="footer-note">
 					<div class="footer-note__title">Разработка проектной<br>документации</div>
 					<div class="footer-note__subtitle">Чертежи КМ, КМД</div>
@@ -17,8 +17,8 @@
 			<div class="site-footer__item site-footer__item--address">
 				<div class="footer-address">
 					<div class="footer-address__item">Адрес: 105318,<br>г. Москва, ул. Ибрагимова, 31 </div>
-					<div class="footer-address__item">Тел.: +7 (495) 789-36-86 </div>
-					<div class="footer-address__item">E-mail: info@bigmsk.ru</div>
+					<div class="footer-address__item">Тел.: +7 (495) 726-57-22</div>
+					<div class="footer-address__item">E-mail: <a href="mailto:info@bigkd.ru">info@bigkd.ru</a></div>
 				</div>
 				<div class="copy">© 2016 «BIG Construction»</div>
 			</div>

@@ -11,7 +11,7 @@
 						</div>
 						<div class="con-address__item">
 							<div class="con-address__title">Телефон:</div>
-							<div class="con-address__text">+7 (495) 789-36-86</div>	
+							<div class="con-address__text">+7 (495) 726-57-22</div>	
 						</div>
 						<div class="con-address__item">
 							<div class="con-address__title">Почта:</div>
@@ -28,7 +28,7 @@
 					<div class="contacts-callback">
 						<div class="contacts-callback__form">
 							<h2 class="contacts-callback__header">Обратная связь</h2>
-							<div class="contacts-callback__item">
+							<!--<div class="contacts-callback__item">
 								<input type="text" placeholder="Ваше имя:*" required>
 							</div>
 							<div class="contacts-callback__item">
@@ -48,7 +48,8 @@
 							</div>
 							<div class="contacts-callback__item  contacts-callback__item--submit">
 								<input type="submit" value="Отправить">
-							</div>
+							</div>-->
+							<?php echo do_shortcode( '[contact-form-7 title="contacts form"]' ); ?>
 						</div>
 					</div>
 				</div>

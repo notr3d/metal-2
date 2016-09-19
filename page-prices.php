@@ -2,26 +2,43 @@
 <div class="content-area">
 	<main class="site-main prices">
 		<section class="main-slider">
-			<div class="main-slider__wrapper">
-				<div class="main-slider__item lcw">
-					<div class="main-slider__title">Разработка чертежей КМД</div>
-					<div class="main-slider__subtitle">У нас Вы можете заказать рабочую<br>документацию стадии КМД</div>
-					<div class="main-slider__price"></div>
+			<div class="main-slider__item main-slider__item--left main-slider__item--dark main-slider__item--1">
+				<div class="main-slider__wrapper lcw">
+					<div class="main-slider__container">
+						<div class="main-slider__title">Разработка чертежей КМД</div>
+						<div class="main-slider__subtitle">У нас вы можете заказать рабочую документацию<br> стадии КМД</div>
+						<div class="main-slider__price"></div>
+					</div>
 					<div class="main-slider__img"></div>
 				</div>
-				<div class="main-slider__item lcw">
-					<div class="main-slider__title">Разработка чертежей КМД 2</div>
-					<div class="main-slider__subtitle">У нас Вы можете заказать рабочую<br>документацию стадии КМД</div>
-					<div class="main-slider__price"></div>
-					<div class="main-slider__img"></div>
-				</div>
-				<div class="main-slider__item lcw">
-					<div class="main-slider__title">Разработка чертежей КМД 2</div>
-					<div class="main-slider__subtitle">У нас Вы можете заказать рабочую<br>документацию стадии КМД</div>
-					<div class="main-slider__price"></div>
-					<div class="main-slider__img"></div>
-				</div>				
 			</div>
+			<div class="main-slider__item main-slider__item--left main-slider__item--light main-slider__item--2">
+				<div class="main-slider__wrapper lcw">
+					<div class="main-slider__container">
+						<div class="main-slider__title">3D моделирование</div>
+						<div class="main-slider__subtitle">Разработка проекта КМД при помощи<br>программ трехмерного моделирования</div>
+					</div>
+					<div class="main-slider__img"></div>
+				</div>
+			</div>	
+			<div class="main-slider__item main-slider__item--right main-slider__item--dark main-slider__item--3">
+				<div class="main-slider__wrapper lcw">
+					<div class="main-slider__container">
+						<div class="main-slider__title">Проектирование объектов</div>
+						<div class="main-slider__subtitle">Проектирование гражданских и промышленных<br>зданий любой сложности</div>
+					</div>
+					<div class="main-slider__img"></div>
+				</div>
+			</div>	
+			<div class="main-slider__item main-slider__item--left main-slider__item--light main-slider__item--4">
+				<div class="main-slider__wrapper lcw">
+					<div class="main-slider__container">
+						<div class="main-slider__title">Проектирование кровли</div>
+						<div class="main-slider__subtitle">Проектирование крыши и кровли<br>любой степени сложности</div>
+					</div>
+					<div class="main-slider__img"></div>
+				</div>
+			</div>				
 		</section>
 		<article class="lcw">
 			<h2 class="article-header">Стоимость разработки КМД:</h2>
@@ -35,7 +52,7 @@
 						<div class="price__number">от 500</div>
 						<div class="price__descr">руб/тонна</div>
 						<div class="price__text">К простым конструкциям относятся склады, ангары, логистические комплексы, любые иные здания на основе ферм.</div>
-						<a href="#" class="price__link">Заказать</a>
+						<span class="price__link header-form-open">Заказать</span>
 					</div>
 				</div>
 				<div class="price__item">
@@ -44,7 +61,7 @@
 						<div class="price__number">от 750</div>
 						<div class="price__descr">руб/тонна</div>
 						<div class="price__text">К типовым относятся технологические конструкции, эстакады, производственные и многоэтажные здания.</div>
-						<a href="#" class="price__link">Заказать</a>
+						<span class="price__link header-form-open">Заказать</span>
 					</div>
 				</div>
 				<div class="price__item">
@@ -53,7 +70,7 @@
 						<div class="price__number">от 1000</div>
 						<div class="price__descr">руб/тонна</div>
 						<div class="price__text">К сложным конструкция относятся криволинейные конструкции, кровля аэропортов, стадионы, архитектурные элементы.</div>
-						<a href="#" class="price__link">Заказать</a>
+						<span class="price__link header-form-open">Заказать</span>
 					</div>
 				</div>				
 			</div>

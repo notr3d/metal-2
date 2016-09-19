@@ -15,7 +15,7 @@
 		@media @d {			
 			background: rgba(255, 186, 47, 0.9);
 			width: 365px;
-			height: 835px;
+			height: 1000px;
 			padding: 25px 40px;
 			position: absolute;
 			top: 0;
@@ -59,7 +59,7 @@
 		
 	}
 	&__form {
-		border: 1px solid @black;
+		border: 1px solid #dddddd;
 		padding: 15px 30px;
 		background: @white;
 	}
@@ -72,8 +72,9 @@
 	}
 	&__item {
 		margin-bottom: 10px;
-		input:not([type="submit"]), textarea {
+		input:not([type="submit"]):not([type="file"]), textarea {
 			width: 100%;
+			display: block;
 			font-size: 12px;
 			padding: 7px;
 			background: #f3f4f6;
@@ -93,6 +94,7 @@
 		}
 		&--submit {
 			text-align: center;
+			margin: 0;
 			input {
 				padding: 20px 40px;
 				width: auto;
@@ -145,6 +147,9 @@
 		padding: 15px;
 		color: @white;
 		font-family: 'Open Sans', sans-serif;
+		&.wpcf7-mail-sent-ok {
+			background: #11a948;
+		}
 	}
 }
 
@@ -152,6 +157,6 @@
 	height: 400px;
 	background: #eaeaea;
 	@media @d {
-		height: 835px;
+		height: 1000px;
 	}
 }

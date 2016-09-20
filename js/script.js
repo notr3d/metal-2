@@ -24,7 +24,7 @@ $(document).ready(function(){
 		loop: true,
 		autoplay: true,
 		animateOut: 'fadeOut',
-		autoplayTimeout: 10000,
+		autoplayTimeout: 5000,
 		nav: true,
 	});
 	

@@ -50,6 +50,143 @@
 				</div>
 			</div>
 		</section>
+		<section class="galery" data-featherlight-gallery data-featherlight-filter=".galery__inner">
+			<div class="galery__wrapper lcw">
+				<h2 class="galery__header">Пример состава проекта КМД:</h2>
+				<div class="galery__container">
+					<div class="galery__item">
+						<a class="galery__inner" href="<?php echo get_template_directory_uri(); ?>/img/galery/kmd/big/01.jpg">
+							<img class="galery__img" src="<?php echo get_template_directory_uri(); ?>/img/galery/kmd/small/01.jpg">
+						</a>
+					</div>
+					<div class="galery__item">
+						<a class="galery__inner" href="<?php echo get_template_directory_uri(); ?>/img/galery/kmd/big/02.jpg">
+							<img class="galery__img" src="<?php echo get_template_directory_uri(); ?>/img/galery/kmd/small/02.jpg">
+						</a>
+					</div>
+					<div class="galery__item">
+						<a class="galery__inner" href="<?php echo get_template_directory_uri(); ?>/img/galery/kmd/big/03.jpg">
+							<img class="galery__img" src="<?php echo get_template_directory_uri(); ?>/img/galery/kmd/small/03.jpg">
+						</a>
+					</div>					
+					<div class="galery__item">
+						<a class="galery__inner" href="<?php echo get_template_directory_uri(); ?>/img/galery/kmd/big/04.jpg">
+							<img class="galery__img" src="<?php echo get_template_directory_uri(); ?>/img/galery/kmd/small/04.jpg">
+						</a>
+					</div>					
+					<div class="galery__item">
+						<a class="galery__inner" href="<?php echo get_template_directory_uri(); ?>/img/galery/kmd/big/05.jpg">
+							<img class="galery__img" src="<?php echo get_template_directory_uri(); ?>/img/galery/kmd/small/05.jpg">
+						</a>
+					</div>					
+					<div class="galery__item">
+						<a class="galery__inner" href="<?php echo get_template_directory_uri(); ?>/img/galery/kmd/big/06.jpg">
+							<img class="galery__img" src="<?php echo get_template_directory_uri(); ?>/img/galery/kmd/small/06.jpg">
+						</a>
+					</div>					
+					<div class="galery__item">
+						<a class="galery__inner" href="<?php echo get_template_directory_uri(); ?>/img/galery/kmd/big/07.jpg">
+							<img class="galery__img" src="<?php echo get_template_directory_uri(); ?>/img/galery/kmd/small/07.jpg">
+						</a>
+					</div>					
+					<div class="galery__item">
+						<a class="galery__inner" href="<?php echo get_template_directory_uri(); ?>/img/galery/kmd/big/08.jpg">
+							<img class="galery__img" src="<?php echo get_template_directory_uri(); ?>/img/galery/kmd/small/08.jpg">
+						</a>
+					</div>					
+					<div class="galery__item">
+						<a class="galery__inner" href="<?php echo get_template_directory_uri(); ?>/img/galery/kmd/big/09.jpg">
+							<img class="galery__img" src="<?php echo get_template_directory_uri(); ?>/img/galery/kmd/small/09.jpg">
+						</a>
+					</div>					
+					<div class="galery__item">
+						<a class="galery__inner" href="<?php echo get_template_directory_uri(); ?>/img/galery/kmd/big/10.jpg">
+							<img class="galery__img" src="<?php echo get_template_directory_uri(); ?>/img/galery/kmd/small/10.jpg">
+						</a>
+					</div>					
+					<div class="galery__item">
+						<a class="galery__inner" href="<?php echo get_template_directory_uri(); ?>/img/galery/kmd/big/11.jpg">
+							<img class="galery__img" src="<?php echo get_template_directory_uri(); ?>/img/galery/kmd/small/11.jpg">
+						</a>
+					</div>					
+					<div class="galery__item">
+						<a class="galery__inner" href="<?php echo get_template_directory_uri(); ?>/img/galery/kmd/big/12.jpg">
+							<img class="galery__img" src="<?php echo get_template_directory_uri(); ?>/img/galery/kmd/small/12.jpg">
+						</a>
+					</div>					
+					<div class="galery__item">
+						<a class="galery__inner" href="<?php echo get_template_directory_uri(); ?>/img/galery/kmd/big/13.jpg">
+							<img class="galery__img" src="<?php echo get_template_directory_uri(); ?>/img/galery/kmd/small/13.jpg">
+						</a>
+					</div>					
+					<div class="galery__item">
+						<a class="galery__inner" href="<?php echo get_template_directory_uri(); ?>/img/galery/kmd/big/14.jpg">
+							<img class="galery__img" src="<?php echo get_template_directory_uri(); ?>/img/galery/kmd/small/14.jpg">
+						</a>
+					</div>					
+					<div class="galery__item">
+						<a class="galery__inner" href="<?php echo get_template_directory_uri(); ?>/img/galery/kmd/big/15.jpg">
+							<img class="galery__img" src="<?php echo get_template_directory_uri(); ?>/img/galery/kmd/small/15.jpg">
+						</a>
+					</div>					
+					<div class="galery__item">
+						<a class="galery__inner" href="<?php echo get_template_directory_uri(); ?>/img/galery/kmd/big/16.jpg">
+							<img class="galery__img" src="<?php echo get_template_directory_uri(); ?>/img/galery/kmd/small/16.jpg">
+						</a>
+					</div>					
+					<div class="galery__item">
+						<a class="galery__inner" href="<?php echo get_template_directory_uri(); ?>/img/galery/kmd/big/17.jpg">
+							<img class="galery__img" src="<?php echo get_template_directory_uri(); ?>/img/galery/kmd/small/17.jpg">
+						</a>
+					</div>					
+					<div class="galery__item">
+						<a class="galery__inner" href="<?php echo get_template_directory_uri(); ?>/img/galery/kmd/big/18.jpg">
+							<img class="galery__img" src="<?php echo get_template_directory_uri(); ?>/img/galery/kmd/small/18.jpg">
+						</a>
+					</div>					
+					<div class="galery__item">
+						<a class="galery__inner" href="<?php echo get_template_directory_uri(); ?>/img/galery/kmd/big/19.jpg">
+							<img class="galery__img" src="<?php echo get_template_directory_uri(); ?>/img/galery/kmd/small/19.jpg">
+						</a>
+					</div>					
+					<div class="galery__item">
+						<a class="galery__inner" href="<?php echo get_template_directory_uri(); ?>/img/galery/kmd/big/20.jpg">
+							<img class="galery__img" src="<?php echo get_template_directory_uri(); ?>/img/galery/kmd/small/20.jpg">
+						</a>
+					</div>					
+					<div class="galery__item">
+						<a class="galery__inner" href="<?php echo get_template_directory_uri(); ?>/img/galery/kmd/big/21.jpg">
+							<img class="galery__img" src="<?php echo get_template_directory_uri(); ?>/img/galery/kmd/small/21.jpg">
+						</a>
+					</div>					
+					<div class="galery__item">
+						<a class="galery__inner" href="<?php echo get_template_directory_uri(); ?>/img/galery/kmd/big/22.jpg">
+							<img class="galery__img" src="<?php echo get_template_directory_uri(); ?>/img/galery/kmd/small/22.jpg">
+						</a>
+					</div>					
+					<div class="galery__item">
+						<a class="galery__inner" href="<?php echo get_template_directory_uri(); ?>/img/galery/kmd/big/23.jpg">
+							<img class="galery__img" src="<?php echo get_template_directory_uri(); ?>/img/galery/kmd/small/23.jpg">
+						</a>
+					</div>					
+					<div class="galery__item">
+						<a class="galery__inner" href="<?php echo get_template_directory_uri(); ?>/img/galery/kmd/big/24.jpg">
+							<img class="galery__img" src="<?php echo get_template_directory_uri(); ?>/img/galery/kmd/small/24.jpg">
+						</a>
+					</div>					
+					<div class="galery__item">
+						<a class="galery__inner" href="<?php echo get_template_directory_uri(); ?>/img/galery/kmd/big/25.jpg">
+							<img class="galery__img" src="<?php echo get_template_directory_uri(); ?>/img/galery/kmd/small/25.jpg">
+						</a>
+					</div>					
+					<div class="galery__item">
+						<a class="galery__inner" href="<?php echo get_template_directory_uri(); ?>/img/galery/kmd/big/26.jpg">
+							<img class="galery__img" src="<?php echo get_template_directory_uri(); ?>/img/galery/kmd/small/26.jpg">
+						</a>
+					</div>								
+				</div>
+			</div>
+		</section>
 	</main>
 </div>
 <?php get_footer(); ?>

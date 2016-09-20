@@ -7,6 +7,8 @@
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700&subset=cyrillic-ext,latin-ext" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=cyrillic-ext" rel="stylesheet">
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/featherlight.css">
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/featherlight.gallery.css">
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/owl.carousel.css">
 	<meta name="yandex-verification" content="7955c531346cf4cb"/>
 	<meta name="google-site-verification" content="PL6BEgz5AmDvRtQXV1tgIkxbyZH-732Pzkytf2BxTvM"/>
@@ -23,9 +25,9 @@
 			</div>
 			<div class="site-header__col site-header__col--right">
 				<div class="top-panel">
-					<div class="top-panel__item top-panel__item--address">
-						<span>г. Москва, ул. Ибрагимова, д.31</span>
-					</div>
+					<!--<div class="top-panel__item top-panel__item--address">
+						<span><a href="contacts">г. Москва, ул. Ибрагимова, д.31</a></span>
+					</div>-->
 					<div class="top-panel__item top-panel__item--email">
 						<a href="mailto:info@bigkd.ru">info@bigkd.ru</a>
 					</div>

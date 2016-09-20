@@ -1062,6 +1062,7 @@ article {
 		&:active {
 			width: 170px;
 			margin-left: -85px;
+			font-size: 16px;
 		}
 	}
 	&__item {
@@ -1284,5 +1285,214 @@ article {
 		@media @d {
 			font-size: 18px;
 		}
+	}
+}
+
+.galery {
+	padding: 30px 0;
+	&__wrapper {
+		
+	}
+	&__header {
+		margin: 0;
+		margin-bottom: 50px;
+		position: relative;
+		padding-bottom: 10px;
+		&::before {
+			content: '';
+			display: block;
+			width: 100px;
+			height: 3px;
+			background: @yellow;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+		}
+	}
+	&__container {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	&__item {
+		flex-basis: 100%;
+		margin-bottom: 30px;
+		@media @t {
+			flex-basis: 50%;
+			&:nth-child(odd) {
+				padding-right: 15px;
+			}
+			&:nth-child(even) {
+				padding-left: 15px;
+			}			
+		}
+		@media @d {
+			flex-basis: 33.333333%;
+			&:nth-child(odd) {
+				padding-right: 0;
+			}
+			&:nth-child(even) {
+				padding-left: 0;
+			}
+			&:nth-child(3n-2) {
+				padding-right: 20px;
+			}
+			&:nth-child(3n-1) {
+				padding: 0 10px;
+			}	
+			&:nth-child(3n) {
+				padding-left: 20px;
+			}				
+		}
+	}
+	&__inner {
+		display: block;
+		cursor: pointer;
+		position: relative;
+		@media @d {
+			&::before {
+				content: '';
+				display: block;
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+				background: rgba(255, 186, 47, 0.8);
+				opacity: 0;
+				transition: .3s;
+			}
+			&:hover {
+				&::before {
+					opacity: 1;
+				}
+				&::after {
+					opacity: 1;
+				}				
+			}
+		}
+		&::after {
+			content: '';
+			display: block;
+			width: 40px;
+			height: 40px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-left: -20px;
+			margin-top: -20px;
+			background: rgba(255, 186, 47, 0.9) url(img/galery/zoom.png) no-repeat center;
+			background-size: 20px;
+			border-radius: 50%;
+			@media @t {
+				width: 70px;
+				height: 70px;
+				margin-left: -35px;
+				margin-top: -35px;
+				background-size: 35px;
+			}
+			@media @d {
+				width: 100px;
+				height: 100px;
+				margin-left: -50px;
+				margin-top: -50px;
+				background-size: 50px;
+				background-color: darken(@yellow, 10%);
+				opacity: 0;
+				transition: .3s;
+			}			
+		}
+	}
+	&__img {
+		display: block;
+		width: 100%;
+	}	
+}
+
+.featherlight {
+	.featherlight-content {
+		padding: 0;
+		border: none;
+	}
+	.featherlight-close-icon {
+		font-size: 0;
+		top: 0;
+		right: 0;
+		width: 30px;
+		height: 30px;
+		//background: rgba(255, 186, 47, 0.9);
+		//border-radius: 50%;
+		opacity: .4;
+		transition: .3s;
+		&::before {
+			content: '×';
+			display: block;
+			width: 100%;
+			height: 100%;		
+			font-weight: bold;
+			position: absolute;
+			top: 0;
+			left: 0;
+			text-align: center;
+			font-size: 30px;
+			line-height: 30px;
+			color: @black;
+			transition: .3s;
+		}
+		@media @t {
+			width: 40px;
+			height: 40px;
+			&::before {
+				font-size: 40px;
+				line-height: 40px;
+			}
+		}
+		@media @d {
+			width: 50px;
+			height: 50px;
+			&::before {
+				font-size: 50px;
+				line-height: 50px;
+			}
+		}		
+		&:hover {
+			opacity: .8;
+		}
+	}
+	.featherlight-next, .featherlight-previous {
+		width: 30px;
+		height: 30px;
+		top: 50%;
+		margin-top: -15px;
+		left: initial;
+		right: 15px;
+		background: url(img/galery/arrow.png) no-repeat center;
+		background-size: contain;
+		transform: rotate(180deg);
+		transition: .3s;
+		opacity: 0.4;
+		span {
+			display: none;
+		}
+		@media @t {
+			width: 40px;
+			height: 40px;
+			margin-top: -20px;
+		}
+		@media @d {
+			width: 50px;
+			height: 50px;
+			margin-top: -25px;
+		}	
+		&:hover {
+			opacity: .6;
+		}
+	}
+	.featherlight-previous {
+		left: 15px;
+		transform: rotate(0deg);
 	}
 }

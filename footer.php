@@ -47,6 +47,8 @@
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/owl.carousel.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/featherlight.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/featherlight.gallery.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/script.js"></script>
 
 <!-- Yandex.Metrika counter --> 

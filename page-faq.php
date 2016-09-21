@@ -72,26 +72,6 @@
 						</ul>
 					</div>					
 				</div>
-				<!--<div class="faq__item">
-					<h2 class="faq__question"></h2>
-					<div class="faq__answer">
-						
-					</div>					
-				</div>-->				
-			</div>
-		</section>
-		<section class="callback">
-			<div class="callback__wrapper lcw">
-				<div class="callback__container">
-					<h2 class="callback__header">Бесплатная оценка<br>проекта КМД</h2>
-					<div class="callback__form">
-						<?php echo do_shortcode( '[contact-form-7 title="callback"]' ); ?>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="faq">
-			<div class="faq__wrapper lcw">
 				<div class="faq__item">
 					<h2 class="faq__question">Так ли необходим КМД?</h2>
 					<div class="faq__answer">
@@ -176,6 +156,16 @@
 							Специалист нашей компании примет звонок и самостоятельно оформит заявку на разработку КМД. При возникновении вопросов наши сотрудники дадут подробные ответы на все вопросы.</li>
 						</ol>
 					</div>					
+				</div>
+			</div>
+		</section>
+		<section class="callback">
+			<div class="callback__wrapper lcw">
+				<div class="callback__container">
+					<h2 class="callback__header">Бесплатная оценка<br>проекта КМД</h2>
+					<div class="callback__form">
+						<?php echo do_shortcode( '[contact-form-7 title="callback"]' ); ?>
+					</div>
 				</div>
 			</div>
 		</section>	

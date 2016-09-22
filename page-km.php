@@ -24,7 +24,7 @@
 		</article>
 		<section class="order">
 			<div class="order__wrapper lcw">
-				<h2 class="order__header">Заказать проект</h2>
+				<h2 class="order__header"><span>Заказать</span><span>проект</span></h2>
 				<div class="order__container">
 					<div class="order__form">
 						<?php echo do_shortcode( '[contact-form-7 title="order"]' ); ?>

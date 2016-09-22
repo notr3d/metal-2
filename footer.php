@@ -1,11 +1,10 @@
 	</div>
 	<footer class="site-footer">
-		<div class="footer-nav">
-			 <?php wp_nav_menu(array(
-				'theme_location' => 'primary',
-				'menu_class' => 'footer-nav__wrapper lcw'
-			)); ?>
-		</div>
+		 <?php wp_nav_menu(array(
+			'theme_location' => 'footer-nav',
+			'container_class' => 'footer-nav',	
+			'menu_class' => 'footer-nav__wrapper lcw'
+		)); ?>
 		<div class="site-footer__wrapper lcw">
 			<div class="site-footer__item site-footer__item--logo">
 				<a href="<?php echo get_permalink(get_page_by_title('главная')->ID)?>" class="site-logo site-logo--footer"></a>

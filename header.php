@@ -37,7 +37,7 @@
 					<div class="top-panel__item top-panel__item--tel">+7 (495) 726-57-22</div>
 				</div>
 				<?php wp_nav_menu(array(
-					'theme_location' => 'primary',
+					'theme_location' => 'header-nav',
 					'menu_class' => 'header-nav'
 				)); ?>
 			</div>			

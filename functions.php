@@ -145,8 +145,18 @@ function register_menus() {
   register_nav_menus(
     array(
 	  'services-nav' => __( 'Services navigation' ),
+	  'header-nav' => __( 'Header navigation' ),
+	  'footer-nav' => __( 'Footer navigation' ),
 	  'aside-nav' => __( 'Aside navigation' )
     )
   );
 }
 add_action( 'init', 'register_menus' );
+
+//hide home
+
+function page_menu_args( $args ) {
+    $args['show_home'] = FALSE;
+    return $args;
+}
+add_filter( 'wp_page_menu_args', 'page_menu_args' );

@@ -20,7 +20,7 @@
 				<div class="service__item">
 					<a href="manufacture" class="service__inner">
 						<div class="service__bg"></div>
-						<h2 class="service__header">Проектирование производственных объектов</h2>
+						<h2 class="service__header">Проектирование зданий и сооружений</h2>
 						<p class="service__text">Мы также проектируем промышленные здания и предприятия (ангаров, складских комплексов, цехов) на основе индивидуальных решений.</p>
 					</a>
 				</div>

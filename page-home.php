@@ -56,7 +56,7 @@
 				</div>
 				<div class="features__item">
 					<a href="manufacture" class="features__inner">
-						<h2 class="features__header">Проектирование объектов</h2>
+						<h2 class="features__header">Проектирование зданий</h2>
 						<p class="features__text">Компания «BIG Constructions» выполняет проектирование промышленных зданий и предприятий (ангаров, складских комплексов, цехов) на основе индивидуальных решений.</p>
 					</a>
 				</div>

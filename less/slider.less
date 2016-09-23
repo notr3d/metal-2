@@ -16,6 +16,11 @@
 	}
 	&__item {
 		background: #eee;
+		&:hover {
+			.main-slider__price {
+				transform: rotate(0) scale(1.05) translate3d(0,0,0) translateZ(0);
+			}
+		}
 		&--left {
 			.main-slider__wrapper {
 				flex-direction: row;
@@ -35,10 +40,43 @@
 					padding-left: 30px;
 				}
 			}
+			.main-slider__title {
+				text-align: right;
+			}
+			.main-slider__subtitle {
+				text-align: right;
+			}			
+			.main-slider__link {
+				align-self: flex-end;
+			}
 		}
-		&--light {
+		&--light {		
 			background: @yellow;
 			color: @dark-grey;
+			/*.main-slider__link {
+				background: @dark-grey;
+				color: @yellow !important;
+				&::before {
+					border-top-color: @yellow;
+					border-right-color: @yellow;
+				}
+			}*/
+			.main-slider__link {
+				background: @white;
+				color: @dark-grey !important;
+				&::before {
+					border-top-color: @dark-grey;
+					border-right-color: @dark-grey;
+				}
+				&:hover {
+					background: @dark-grey;
+					color: @white !important;
+					&::before {
+						border-top-color: @white;
+						border-right-color: @white;
+					}
+				}
+			}
 		}
 		&--dark {
 			background: @dark-grey;
@@ -118,16 +156,62 @@
 	}
 	&__price {		
 		background: url(img/slider/prices/500.png) no-repeat center;
-		transform: rotate(-10deg);
+		transform: rotate(-10deg) translate3d(0,0,0) translateZ(0);
+		-webkit-backface-visibility: hidden;
 		background-size: contain;
+		transition: .3s;
 		height: 60px;
+		width: 320px;
+		align-self: center;
 		@media @t {
 			height: 110px;
 		}
 		@media @d {
-			height: 160px;
+			height: 115px;
 			background-size: auto;
 		}
+		&:focus {
+			outline: none;
+		}
+	}
+	&__link {
+		display: inline-block;
+		font-family: 'Open Sans', sans-serif;
+		padding: 15px 45px;
+		text-transform: uppercase;
+		background: @yellow;
+		color: @dark-grey;
+		align-self: flex-start;
+		text-decoration: none;
+		transition: .3s;
+		position: relative;
+		&::before {
+			content: '';
+			display: block;
+			width: 14px;
+			height: 14px;
+			border: 1px solid transparent;
+			border-top-color: @dark-grey;
+			border-right-color: @dark-grey;
+			position: absolute;
+			top: 50%;
+			margin-top: -7px;
+			right: 25px;
+			transform: rotate(45deg);
+			transition: .3s;
+		}
+		&:hover {
+			background: @white;
+			color: @dark-grey !important;
+			&::before {
+				border-top-color: @dark-grey;
+				border-right-color: @dark-grey;
+			}
+		}
+		&:visited {
+			color: @dark-grey;
+		}
+		
 	}
 	.owl-stage {			
 		background: @dark-grey;

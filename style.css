@@ -1145,6 +1145,9 @@ object {
 .main-slider__item {
   background: #eee;
 }
+.main-slider__item:hover .main-slider__price {
+  transform: rotate(0) scale(1.05) translate3d(0, 0, 0) translateZ(0);
+}
 .main-slider__item--left .main-slider__wrapper {
   flex-direction: row;
 }
@@ -1161,9 +1164,42 @@ object {
     padding-left: 30px;
   }
 }
+.main-slider__item--right .main-slider__title {
+  text-align: right;
+}
+.main-slider__item--right .main-slider__subtitle {
+  text-align: right;
+}
+.main-slider__item--right .main-slider__link {
+  align-self: flex-end;
+}
 .main-slider__item--light {
   background: #ffba2f;
   color: #3b3b3d;
+  /*.main-slider__link {
+				background: @dark-grey;
+				color: @yellow !important;
+				&::before {
+					border-top-color: @yellow;
+					border-right-color: @yellow;
+				}
+			}*/
+}
+.main-slider__item--light .main-slider__link {
+  background: #fff;
+  color: #3b3b3d !important;
+}
+.main-slider__item--light .main-slider__link::before {
+  border-top-color: #3b3b3d;
+  border-right-color: #3b3b3d;
+}
+.main-slider__item--light .main-slider__link:hover {
+  background: #3b3b3d;
+  color: #fff !important;
+}
+.main-slider__item--light .main-slider__link:hover::before {
+  border-top-color: #fff;
+  border-right-color: #fff;
 }
 .main-slider__item--dark {
   background: #3b3b3d;
@@ -1244,9 +1280,13 @@ object {
 }
 .main-slider__price {
   background: url(img/slider/prices/500.png) no-repeat center;
-  transform: rotate(-10deg);
+  transform: rotate(-10deg) translate3d(0, 0, 0) translateZ(0);
+  -webkit-backface-visibility: hidden;
   background-size: contain;
+  transition: .3s;
   height: 60px;
+  width: 320px;
+  align-self: center;
 }
 @media (min-width: 768px) {
   .main-slider__price {
@@ -1255,9 +1295,50 @@ object {
 }
 @media (min-width: 1100px) {
   .main-slider__price {
-    height: 160px;
+    height: 115px;
     background-size: auto;
   }
+}
+.main-slider__price:focus {
+  outline: none;
+}
+.main-slider__link {
+  display: inline-block;
+  font-family: 'Open Sans', sans-serif;
+  padding: 15px 45px;
+  text-transform: uppercase;
+  background: #ffba2f;
+  color: #3b3b3d;
+  align-self: flex-start;
+  text-decoration: none;
+  transition: .3s;
+  position: relative;
+}
+.main-slider__link::before {
+  content: '';
+  display: block;
+  width: 14px;
+  height: 14px;
+  border: 1px solid transparent;
+  border-top-color: #3b3b3d;
+  border-right-color: #3b3b3d;
+  position: absolute;
+  top: 50%;
+  margin-top: -7px;
+  right: 25px;
+  transform: rotate(45deg);
+  transition: .3s;
+}
+.main-slider__link:hover {
+  background: #fff;
+  color: #3b3b3d !important;
+}
+.main-slider__link:hover::before {
+  border-top-color: #3b3b3d;
+  border-right-color: #3b3b3d;
+}
+.main-slider__link:visited {
+  color: #3b3b3d;
 }
 .main-slider .owl-stage {
   background: #3b3b3d;
@@ -1682,6 +1763,120 @@ object {
   left: 50%;
   margin-left: -20px;
 }
+.price-form {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 100000000;
+  display: none;
+}
+.price-form.active {
+  display: block;
+}
+.price-form__form {
+  background: #fff;
+  padding: 15px;
+  width: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #3b3b3d;
+}
+.price-form__item {
+  margin-bottom: 15px;
+}
+.price-form__item input,
+.price-form__item textarea {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #3b3b3d;
+  font-family: 'Open Sans', sans-serif;
+}
+.price-form__item input[type="file"] {
+  display: none;
+}
+.price-form__item textarea {
+  resize: none;
+  height: 140px;
+}
+.price-form__item label {
+  display: block;
+  text-align: center;
+}
+.price-form__item label span {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.price-form__header {
+  margin: 15px 0 30px;
+  text-align: center;
+}
+.price-form__close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  width: 45px;
+  line-height: 45px;
+  cursor: pointer;
+  transition: .3s;
+}
+.price-form__close:hover {
+  color: #ffba2f;
+}
+.price-form .wpcf7-form {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: column;
+}
+.price-form .wpcf7-form input {
+  margin-top: 15px;
+  padding: 15px;
+  border-radius: 0;
+  margin: 0;
+  width: 100%;
+}
+.price-form .wpcf7-form input[type="submit"] {
+  font-size: 20px;
+}
+.price-form br {
+  display: none;
+}
+.price-form .ajax-loader {
+  display: none;
+}
+.price-form .wpcf7-not-valid {
+  border-color: #a91130;
+}
+.price-form .wpcf7-not-valid-tip {
+  background: #a91130;
+  font-size: 10px;
+  color: #fff;
+  padding: 0 10px;
+  font-family: 'Open Sans', sans-serif;
+}
+.price-form .wpcf7-response-output {
+  margin: 0;
+  border: none;
+  background: #a91130;
+  font-size: 12px;
+  padding: 15px;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+}
+.price-form .wpcf7-response-output.wpcf7-mail-sent-ok {
+  background: #11a948;
+}
 .service {
   background: #ffba2f;
   padding-top: 15px;
@@ -1693,7 +1888,7 @@ object {
 }
 @media (min-width: 1100px) {
   .service {
-    padding: 120px 0 85px;
+    padding-top: 120px;
   }
 }
 .service__wrapper {
@@ -2492,10 +2687,35 @@ article a:visited {
   font-family: 'Open Sans', sans-serif;
 }
 .callback {
-  margin: 30px 0;
+  padding: 30px 0;
+}
+.callback--yellow {
+  padding: 0;
+  padding-bottom: 15px;
+  background: #ffba2f;
+}
+@media (min-width: 768px) {
+  .callback--yellow {
+    padding-bottom: 30px;
+  }
+}
+@media (min-width: 1100px) {
+  .callback--yellow {
+    padding-bottom: 120px;
+  }
+}
+.callback--yellow .callback__container {
+  background: #fff;
+}
+.callback--yellow .callback__header {
+  background: #3b3b3d;
+  color: #fff;
+}
+.callback--yellow .callback__header::before {
+  border-left-color: #3b3b3d;
 }
 .callback__container {
-  border: 1px solid #333;
+  border: 1px solid #3b3b3d;
   padding: 20px 30px 0;
   display: -webkit-flex;
   display: -moz-flex;
@@ -2664,6 +2884,11 @@ article a:visited {
   font-size: 16px;
   font-weight: bold;
   text-shadow: none;
+  transition: .3s;
+}
+.callback__item--submit input:hover {
+  background: #222223;
+  color: #ffba2f;
 }
 @media (min-width: 1100px) {
   .callback__item--name {

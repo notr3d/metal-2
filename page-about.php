@@ -7,7 +7,7 @@
 					<div class="main-slider__container">
 						<div class="main-slider__title">Разработка чертежей КМД</div>
 						<div class="main-slider__subtitle">У нас вы можете заказать рабочую документацию<br> стадии КМД</div>
-						<div class="main-slider__price"></div>
+						<a href="kmd" class="main-slider__price"></a>
 					</div>
 					<div class="main-slider__img"></div>
 				</div>
@@ -17,6 +17,7 @@
 					<div class="main-slider__container">
 						<div class="main-slider__title">3D моделирование</div>
 						<div class="main-slider__subtitle">Разработка проекта КМД при помощи<br>программ трехмерного моделирования</div>
+						<a href="modeling" class="main-slider__link">Перейти</a>
 					</div>
 					<div class="main-slider__img"></div>
 				</div>
@@ -26,6 +27,7 @@
 					<div class="main-slider__container">
 						<div class="main-slider__title">Проектирование объектов</div>
 						<div class="main-slider__subtitle">Проектирование гражданских и промышленных<br>зданий любой сложности</div>
+						<a href="manufacture" class="main-slider__link">Перейти</a>
 					</div>
 					<div class="main-slider__img"></div>
 				</div>
@@ -35,6 +37,7 @@
 					<div class="main-slider__container">
 						<div class="main-slider__title">Проектирование кровли</div>
 						<div class="main-slider__subtitle">Проектирование крыши и кровли<br>любой степени сложности</div>
+						<a href="roof" class="main-slider__link">Перейти</a>
 					</div>
 					<div class="main-slider__img"></div>
 				</div>
@@ -114,7 +117,7 @@
 		<section class="callback">
 			<div class="callback__wrapper lcw">
 				<div class="callback__container">
-					<h2 class="callback__header">Бесплатная оценка<br>проекта КМД</h2>
+					<h2 class="callback__header">Бесплатная оценка<br>Вашего проекта</h2>
 					<div class="callback__form">
 						<?php echo do_shortcode( '[contact-form-7 title="callback"]' ); ?>
 					</div>

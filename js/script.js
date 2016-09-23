@@ -24,7 +24,7 @@ $(document).ready(function(){
 		loop: true,
 		autoplay: true,
 		animateOut: 'fadeOut',
-		autoplayTimeout: 5000,
+		autoplayTimeout: 8000,
 		nav: true,
 	});
 	
@@ -61,3 +61,19 @@ cbOpen.click(function(){
 cbClose.click(function(){
 	cbPopup.removeClass('active');	
 });
+
+
+//price form
+
+var priceOpen = $('.price__link');
+var priceForm = $('.price-form');
+var priceClose = $('.price-form__close');
+
+priceOpen.click(function(){	
+	priceForm.toggleClass('active');
+});
+
+priceClose.click(function(){	
+	priceForm.toggleClass('active');
+});
+

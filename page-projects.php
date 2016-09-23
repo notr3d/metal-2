@@ -81,6 +81,16 @@
 				</div>				
 			</div>
 		</section>
+		<section class="callback">
+			<div class="callback__wrapper lcw">
+				<div class="callback__container">
+					<h2 class="callback__header">Бесплатная оценка<br>Вашего проекта</h2>
+					<div class="callback__form">
+						<?php echo do_shortcode( '[contact-form-7 title="callback"]' ); ?>
+					</div>
+				</div>
+			</div>
+		</section>
 	</main>
 </div>
 <?php get_footer(); ?>

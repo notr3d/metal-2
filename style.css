@@ -3921,3 +3921,58 @@ article a:visited {
   left: 15px;
   transform: rotate(0deg);
 }
+.scrollup {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  width: 30px;
+  height: 30px;
+  background: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: .3s;
+  border-radius: 15%;
+  opacity: 0;
+  visibility: hidden;
+}
+.scrollup::before {
+  content: '';
+  display: block;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -25%) rotate(45deg);
+  border: 1px solid transparent;
+  border-left-color: #fff;
+  border-top-color: #fff;
+  transition: .3s;
+}
+@media (min-width: 768px) {
+  .scrollup {
+    right: 30px;
+    bottom: 30px;
+    width: 40px;
+    height: 40px;
+  }
+}
+@media (min-width: 1100px) {
+  .scrollup {
+    right: 45px;
+    bottom: 45px;
+    width: 50px;
+    height: 50px;
+  }
+}
+.scrollup:hover {
+  border-radius: 25%;
+  background: rgba(0, 0, 0, 0.4);
+}
+.scrollup:hover::before {
+  border-left-color: #ffba2f;
+  border-top-color: #ffba2f;
+}
+.scrollup--visible {
+  visibility: visible;
+  opacity: 1;
+}

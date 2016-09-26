@@ -1530,3 +1530,55 @@ article {
 		transform: rotate(0deg);
 	}
 }
+
+.scrollup {
+	position: fixed;
+	bottom: 15px;
+	right: 15px;
+	width: 30px;
+	height: 30px;
+	background: rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+	transition: .3s;
+	border-radius: 15%;
+	opacity: 0;
+	visibility: hidden;
+	&::before {
+		content: '';
+		display: block;
+		width: 15px;
+		height: 15px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -25%) rotate(45deg);
+		border: 1px solid transparent;
+		border-left-color: @white;
+		border-top-color: @white;
+		transition: .3s;
+	}
+	@media @t {
+		right: 30px;
+		bottom: 30px;
+		width: 40px;
+		height: 40px;
+	}
+	@media @d {
+		right: 45px;
+		bottom: 45px;
+		width: 50px;
+		height: 50px;
+	}
+	&:hover {
+		border-radius: 25%;
+		background: rgba(0, 0, 0, 0.4);
+		&::before {
+			border-left-color: @yellow;
+			border-top-color: @yellow;
+		}
+	}
+	&--visible {
+		visibility: visible;
+		opacity: 1;
+	}
+}

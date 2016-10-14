@@ -34,7 +34,7 @@
 					<div class="top-panel__item top-panel__item--callback">
 						<span class="header-form-open">Заказать звонок</span>
 					</div>
-					<div class="top-panel__item top-panel__item--tel">+7 (495) 726-57-22</div>
+					<div class="top-panel__item top-panel__item--tel"><a href="tel:84957265722">+7 (495) 726-57-22</a></div>
 				</div>
 				<?php wp_nav_menu(array(
 					'theme_location' => 'header-nav',

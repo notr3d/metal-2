@@ -190,7 +190,7 @@
 							<img src="<?php echo get_template_directory_uri(); ?>/img/home/examples/6.jpg" alt="" class="examples__img">
 							<div class="examples__mask">
 								<h3 class="examples__header">Промышленное сооружение ЛЭП У-220-2т+14</h3>
-								<p class="examples__text">Раздел КМД включает отдельные колонны и связи каркаса с несущими колоннами, рамой и фахверком</p>
+								<p class="examples__text">Раздел КМД включает пояса жесткости, распорки и связи</p>
 								<p class="examples__text">Общая площадь: <b> 86,5 м<sup>2</sup></b></p>
 								<p class="examples__text">Общий вес: <b>23,5 т</b></p>
 								<p class="examples__text">Марка стали: <b>С245</b></p>

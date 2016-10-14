@@ -873,6 +873,13 @@ object {
 .top-panel__item--tel::before {
   display: none;
 }
+.top-panel__item--tel a {
+  border: none;
+  transition: .3s;
+}
+.top-panel__item--tel a:hover {
+  color: #ffba2f;
+}
 .header-nav {
   flex-basis: 100%;
   list-style: none;
